@@ -1,0 +1,6 @@
+# Python / Windows temp
+__pycache__/
+*.pyc
+*.tmp
+.DS_Store
+Thumbs.db
