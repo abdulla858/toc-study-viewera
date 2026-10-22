@@ -567,11 +567,336 @@
     renderCard();
   }
 
-  // Add Flashcards button to Top Header
+  // ==========================================
+  // 6. PER-SLIDE EXAM QUESTIONS & GOLDEN QUOTES
+  // ==========================================
+  let globalQuizOpen = false;
+
+  function attachSlideExamBoxes() {
+    if (!window.TOC_SLIDE_EXAM) return;
+
+    document.querySelectorAll(".slide-card").forEach((card) => {
+      if (card.querySelector(".quiz-btn")) return;
+
+      const sid = card.dataset.id;
+      const qData = window.TOC_SLIDE_EXAM[sid];
+      if (!qData) return;
+
+      const actions = card.querySelector(".sc-actions");
+      const body = card.querySelector(".sc-body");
+      if (!actions || !body) return;
+
+      // 1. Action Button
+      const quizBtn = document.createElement("button");
+      quizBtn.className = "mini quiz-btn" + (globalQuizOpen ? " on" : "");
+      quizBtn.type = "button";
+      if (qData.isOfficial) {
+        quizBtn.style.cssText = "background: rgba(245, 177, 61, 0.22); color: var(--acc); border: 1px solid var(--acc); font-weight: 800;";
+        quizBtn.innerHTML = `<svg class="svg-ic" viewBox="0 0 24 24" fill="currentColor" style="width:14px;height:14px;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> <span>سؤال رسمي</span>`;
+        quizBtn.title = qData.badge || "سؤال امتحان فصلي رسمي";
+      } else {
+        quizBtn.innerHTML = `<svg class="svg-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> <span>سؤال واقتباس</span>`;
+        quizBtn.title = "سؤال امتحاني واقتباس مخصص لهذا السلايد";
+      }
+
+      // 2. Quiz Panel
+      const panel = document.createElement("div");
+      panel.className = "sc-quiz-panel" + (globalQuizOpen ? " show" : "");
+      panel.style.cssText = "display: none; margin-top: 14px; background: var(--sf); border: 1px solid var(--ln); border-radius: var(--r-m); padding: 16px; border-right: 4px solid var(--acc);";
+
+      let choicesHtml = "";
+      if (qData.choices && qData.choices.length) {
+        choicesHtml = `
+          <div class="quiz-choices-wrap" style="display: flex; flex-direction: column; gap: 8px; margin: 12px 0;">
+            ${qData.choices.map((c, i) => `
+              <button type="button" class="quiz-choice-btn" data-idx="${i}" style="text-align: right; background: var(--sf2); color: var(--ink); border: 1px solid var(--ln); border-radius: 8px; padding: 10px 14px; font-weight: 600; cursor: pointer; transition: all 0.2s var(--ease); font-family: var(--fa); font-size: 0.92rem;">
+                <span class="choice-dot" style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--ln); margin-left: 8px;"></span>
+                ${c.label}
+              </button>
+            `).join("")}
+          </div>
+          <div class="quiz-feedback-box" style="display: none; padding: 12px 14px; border-radius: 8px; margin-top: 8px; font-size: 0.9rem; line-height: 1.7;"></div>
+        `;
+      }
+
+      panel.innerHTML = `
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+          <span style="font-size: 0.8rem; font-weight: 800; padding: 3px 10px; border-radius: 20px; background: ${qData.isOfficial ? "rgba(245,177,61,0.25); color: var(--acc); border: 1px solid var(--acc)" : "var(--acc-g); color: var(--acc)"};">
+            ${qData.badge || "🎯 سؤال امتحاني مقتبس"}
+          </span>
+          <span style="font-size: 0.75rem; color: var(--ink-m); font-weight: 700;">سلايد ${sid}</span>
+        </div>
+
+        <div style="direction: ltr; text-align: left; font-family: var(--fm); font-size: 1rem; font-weight: 700; color: var(--ink); background: var(--sf2); padding: 10px 14px; border-radius: 8px; border-left: 3px solid var(--acc); margin-bottom: 8px;">
+          ${qData.q_en}
+        </div>
+
+        <div style="font-size: 0.95rem; font-weight: 700; color: var(--ink); margin-bottom: 6px;">
+          ${qData.q_ar}
+        </div>
+
+        ${choicesHtml}
+
+        ${qData.diagram ? `<div style="margin: 12px 0;">${qData.diagram}</div>` : ""}
+
+        ${qData.quote ? `
+          <div style="margin-top: 12px; background: rgba(56, 189, 248, 0.1); border-right: 4px solid #38bdf8; border-radius: 8px; padding: 10px 14px; font-size: 0.88rem; color: var(--ink); line-height: 1.7;">
+            ${qData.quote}
+          </div>
+        ` : ""}
+      `;
+
+      // Event Listeners for Choices
+      if (qData.choices && qData.choices.length) {
+        const choiceBtns = panel.querySelectorAll(".quiz-choice-btn");
+        const feedbackBox = panel.querySelector(".quiz-feedback-box");
+
+        choiceBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const idx = parseInt(btn.dataset.idx, 10);
+            const choice = qData.choices[idx];
+
+            choiceBtns.forEach((b) => {
+              b.style.pointerEvents = "none";
+              b.style.opacity = "0.7";
+            });
+
+            feedbackBox.style.display = "block";
+            if (choice.ok) {
+              btn.style.opacity = "1";
+              btn.style.background = "rgba(46, 160, 67, 0.2)";
+              btn.style.borderColor = "var(--ok)";
+              btn.style.color = "var(--ok)";
+              btn.querySelector(".choice-dot").style.background = "var(--ok)";
+
+              feedbackBox.style.background = "rgba(46, 160, 67, 0.15)";
+              feedbackBox.style.border = "1px solid var(--ok)";
+              feedbackBox.style.color = "var(--ok)";
+              feedbackBox.innerHTML = `<b>✅ إجابة صحيحة وممتازة!</b><br>${choice.why}`;
+            } else {
+              btn.style.opacity = "1";
+              btn.style.background = "rgba(217, 138, 138, 0.2)";
+              btn.style.borderColor = "var(--err)";
+              btn.style.color = "var(--err)";
+              btn.querySelector(".choice-dot").style.background = "var(--err)";
+
+              feedbackBox.style.background = "rgba(217, 138, 138, 0.15)";
+              feedbackBox.style.border = "1px solid var(--err)";
+              feedbackBox.style.color = "var(--err)";
+              feedbackBox.innerHTML = `<b>❌ إجابة خاطئة!</b><br>${choice.why}${qData.correction ? `<br><b style="color:var(--acc); display:inline-block; margin-top:4px;">الصحيح المعتمد:</b> ${qData.correction}` : ""}`;
+            }
+          });
+        });
+      }
+
+      // Toggle Quiz Button
+      quizBtn.addEventListener("click", () => {
+        const isShown = panel.style.display === "block";
+        panel.style.display = isShown ? "none" : "block";
+        quizBtn.classList.toggle("on", !isShown);
+      });
+
+      if (globalQuizOpen) panel.style.display = "block";
+
+      actions.insertBefore(quizBtn, actions.firstChild);
+      body.appendChild(panel);
+    });
+  }
+
+  // ==========================================
+  // 7. OFFICIAL UNIVERSITY EXAM SHEET MODAL
+  // ==========================================
+  function createOfficialExamModal() {
+    let modal = document.getElementById("officialExamModal");
+    if (modal) {
+      modal.hidden = false;
+      return;
+    }
+
+    modal = document.createElement("div");
+    modal.id = "officialExamModal";
+    modal.style.cssText = "position: fixed; inset: 0; z-index: 10000; background: rgba(0,0,0,0.85); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; padding: 20px;";
+
+    modal.innerHTML = `
+      <div style="background: var(--bg-s); border: 2px solid var(--acc); border-radius: var(--r-l); width: 100%; max-width: 950px; max-height: 90vh; overflow-y: auto; box-shadow: 0 25px 60px rgba(0,0,0,0.7); padding: 28px; position: relative; font-family: var(--fa); color: var(--ink);">
+        <!-- Header -->
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--ln); padding-bottom: 16px; margin-bottom: 20px;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 0.85rem; font-weight: 800; background: var(--acc); color: var(--bg); padding: 2px 10px; border-radius: 999px;">معتمد 100%</span>
+              <h2 style="margin: 0; font-size: 1.4rem; color: var(--ink);">ورقة الاختبار الفصلي الرسمي — الحل الكامل</h2>
+            </div>
+            <p style="margin: 4px 0 0; font-size: 0.9rem; color: var(--ink-m);">Automata & Formal Languages — د. رويدا العامري — مع الترجمة، التصحيح، والرسومات</p>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <button id="examPrintBtn" class="top-btn" style="background: var(--sf2); color: var(--ink); border: 1px solid var(--ln); padding: 0 14px; height: 38px; display: inline-flex; align-items: center; gap: 6px;">
+              <svg class="svg-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+              <span>طباعة</span>
+            </button>
+            <button id="examCloseBtn" style="background: var(--sf2); border: none; font-size: 1.5rem; color: var(--ink-m); cursor: pointer; border-radius: 50%; width: 38px; height: 38px; display: grid; place-items: center;">&times;</button>
+          </div>
+        </div>
+
+        <!-- Section 1: Q1 True / False -->
+        <div style="background: var(--sf); border: 1px solid var(--ln); border-radius: var(--r-m); padding: 18px; margin-bottom: 20px;">
+          <h3 style="margin-top: 0; color: var(--acc); font-size: 1.15rem; border-bottom: 1px solid var(--ln); padding-bottom: 8px;">Q1: Put a "T" or an "F" in front of each sentence (10 فقرات صح أو خطأ)</h3>
+          
+          <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 14px;">
+            <div style="background: var(--sf2); border-radius: 10px; padding: 12px 16px;">
+              <b>1.</b> An alphabet is a finite set of fundamental symbols. 
+              <span style="color: var(--ok); font-weight: 800; margin-right: 8px;">✅ True — صح</span>
+              <div style="font-size: 0.85rem; color: var(--ink-m); margin-top: 4px;">الأبجدية Σ مجموعة منتهية من الرموز الأساسية.</div>
+            </div>
+
+            <div style="background: var(--sf2); border-radius: 10px; padding: 12px 16px;">
+              <b>2.</b> In DFA, for each state and each input symbol, there is exactly one transition. 
+              <span style="color: var(--ok); font-weight: 800; margin-right: 8px;">✅ True — صح</span>
+              <div style="font-size: 0.85rem; color: var(--ink-m); margin-top: 4px;">شرط الحتمية في DFA خروج سهم واحد فقط ومحدد لكل رمز من كل حالة وبلا انتقالات إبسيلون.</div>
+            </div>
+
+            <div style="background: var(--sf2); border-radius: 10px; padding: 12px 16px;">
+              <b>3.</b> A Finite Automaton is a mathematical model that consists of a finite number of states and moves between states when reading input symbols. 
+              <span style="color: var(--ok); font-weight: 800; margin-right: 8px;">✅ True — صح</span>
+            </div>
+
+            <div style="background: var(--sf2); border-radius: 10px; padding: 12px 16px;">
+              <b>4.</b> If u = "abb" and v = "ab", then uv = "abba". 
+              <span style="color: var(--err); font-weight: 800; margin-right: 8px;">❌ False — خطأ</span>
+              <div style="font-size: 0.88rem; color: var(--acc); font-weight: 700; margin-top: 4px;">التصحيح: uv = abb · ab = abbab (طوله 5 وليس abba).</div>
+            </div>
+
+            <div style="background: var(--sf2); border-radius: 10px; padding: 12px 16px;">
+              <b>5.</b> A formal language is a set of strings over an alphabet. 
+              <span style="color: var(--ok); font-weight: 800; margin-right: 8px;">✅ True — صح</span>
+            </div>
+
+            <div style="background: var(--sf2); border-radius: 10px; padding: 12px 16px;">
+              <b>6.</b> If a finite automaton ends in a final state after processing the entire input, then the machine stops immediately. 
+              <span style="color: var(--ok); font-weight: 800; margin-right: 8px;">✅ True — صح</span>
+              <div style="font-size: 0.85rem; color: var(--ink-m); margin-top: 4px;">بما أن كامل الدخل تمت معالجته والآلة في حالة قبول تُقبل السلسلة وتتوقف الآلة.</div>
+            </div>
+
+            <div style="background: var(--sf2); border-radius: 10px; padding: 12px 16px;">
+              <b>7.</b> Computability Theory is the branch that studies problems that cannot be solved by any algorithm. 
+              <span style="color: var(--err); font-weight: 800; margin-right: 8px;">❌ False — خطأ</span>
+              <div style="font-size: 0.88rem; color: var(--acc); font-weight: 700; margin-top: 4px;">التصحيح: تدرس المسائل التي يمكن وما لا يمكن حلها خوارزمياً (CAN and CANNOT be solved).</div>
+            </div>
+
+            <div style="background: var(--sf2); border-radius: 10px; padding: 12px 16px;">
+              <b>8.</b> Grammar is a set of rules for accepted language. 
+              <span style="color: var(--err); font-weight: 800; margin-right: 8px;">❌ False — خطأ</span>
+              <div style="font-size: 0.88rem; color: var(--acc); font-weight: 700; margin-top: 4px;">التصحيح: Grammar تُولِّد اللغة (Generates)، بينما Automaton يقبل ويفحص (Accepts).</div>
+            </div>
+
+            <div style="background: var(--sf2); border-radius: 10px; padding: 12px 16px;">
+              <b>9.</b> Grammar is the process of applying Production Rules starting from the Start Symbol until we reach a string that contains only Terminals. 
+              <span style="color: var(--err); font-weight: 800; margin-right: 8px;">❌ False — خطأ</span>
+              <div style="font-size: 0.88rem; color: var(--acc); font-weight: 700; margin-top: 4px;">التصحيح: هذا تعريف الاشتقاق (Derivation) وليس القواعد.</div>
+            </div>
+
+            <div style="background: var(--sf2); border-radius: 10px; padding: 12px 16px;">
+              <b>10.</b> A formal grammar is generally defined as G = (Q, Σ, P, F). 
+              <span style="color: var(--err); font-weight: 800; margin-right: 8px;">❌ False — خطأ</span>
+              <div style="font-size: 0.88rem; color: var(--acc); font-weight: 700; margin-top: 4px;">التصحيح: G = (V, Σ, P, S) حيث V=Variables, Σ=Terminals, P=Productions, S=Start Symbol.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: Q2 -->
+        <div style="background: var(--sf); border: 1px solid var(--ln); border-radius: var(--r-m); padding: 18px; margin-bottom: 20px;">
+          <h3 style="margin-top: 0; color: var(--acc); font-size: 1.15rem;">Q2: How does a finite automaton work?</h3>
+          <p style="font-size: 0.95rem; line-height: 1.8; color: var(--ink);">
+            <b>الإجابة النموذجية المعتمدة:</b><br>
+            A finite automaton starts at the initial state (q₀), reads the input one symbol at a time from left to right, and follows transitions according to the transition function δ(state, symbol). After all input is read, if the automaton is in a final state (q ∈ F), the string is accepted; otherwise, it is rejected.
+          </p>
+        </div>
+
+        <!-- Section 3: Q3 -->
+        <div style="background: var(--sf); border: 1px solid var(--ln); border-radius: var(--r-m); padding: 18px; margin-bottom: 20px;">
+          <h3 style="margin-top: 0; color: var(--acc); font-size: 1.15rem;">Q3: Draw a graph representing all strings generated by L = { a^(n+1) | n ≥ 0 }?</h3>
+          <p style="font-size: 0.95rem; color: var(--ink);">
+            <b>التحليل الرياضي:</b> n=0 ➔ a, n=1 ➔ aa, n=2 ➔ aaa ... إذن اللغة هي L = a⁺ = {a, aa, aaa, ...}<br>
+            <b>تنبيه:</b> السلسلة الفارغة ε مستبعدة تماماً، لذا حالة البداية q0 ليست نهائية.
+          </p>
+          <div style="background: var(--sf2); border-radius: 12px; padding: 14px; text-align: center; margin-top: 10px;">
+            <svg viewBox="0 0 500 150" style="max-width: 100%; height: auto;">
+              <defs><marker id="arrM" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="var(--acc)"/></marker></defs>
+              <line x1="20" y1="75" x2="85" y2="75" stroke="var(--acc)" stroke-width="2.5" marker-end="url(#arrM)"/>
+              <circle cx="120" cy="75" r="30" fill="var(--sf)" stroke="var(--ln)" stroke-width="2"/>
+              <text x="120" y="81" text-anchor="middle" font-size="16" font-weight="800" fill="var(--ink)">q0</text>
+              <line x1="150" y1="75" x2="275" y2="75" stroke="var(--acc)" stroke-width="2.5" marker-end="url(#arrM)"/>
+              <text x="212" y="65" text-anchor="middle" font-size="16" font-weight="800" fill="var(--acc)">a</text>
+              <circle cx="310" cy="75" r="32" fill="var(--sf)" stroke="var(--ok)" stroke-width="2.5"/>
+              <circle cx="310" cy="75" r="26" fill="none" stroke="var(--ok)" stroke-width="1.5"/>
+              <text x="310" y="81" text-anchor="middle" font-size="16" font-weight="800" fill="var(--ink)">q1</text>
+              <path d="M295 48 C270 5, 350 5, 325 48" fill="none" stroke="var(--acc)" stroke-width="2" marker-end="url(#arrM)"/>
+              <text x="310" y="20" text-anchor="middle" font-size="15" font-weight="800" fill="var(--acc)">a</text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Section 4: Q4 -->
+        <div style="background: var(--sf); border: 1px solid var(--ln); border-radius: var(--r-m); padding: 18px;">
+          <h3 style="margin-top: 0; color: var(--acc); font-size: 1.15rem;">Q4: Grammar: S ➔ Ab, A ➔ aAb, A ➔ λ — Derive all strings & construct language</h3>
+          <div style="font-family: var(--fm); line-height: 2; font-size: 0.95rem; background: var(--sf2); padding: 14px; border-radius: 8px;">
+            S ⟹ Ab ⟹ λb ⟹ <b>b</b> (n=0)<br>
+            S ⟹ Ab ⟹ aAbb ⟹ aλbb ⟹ <b>abb</b> (n=1)<br>
+            S ⟹ Ab ⟹ aAbb ⟹ aaAbbb ⟹ aaλbbb ⟹ <b>aabbb</b> (n=2)<br>
+            S ⟹ Ab ⟹ aAbb ⟹ aaAbbb ⟹ aaaAbbbb ⟹ aaaλbbbb ⟹ <b>aaabbbb</b> (n=3)
+          </div>
+          <div style="margin-top: 10px; font-weight: 800; color: var(--acc); font-size: 1.05rem;">
+            اللغة الناتجة: L = { aⁿ bⁿ⁺¹ | n ≥ 0 }
+          </div>
+          <div style="margin-top: 8px; font-size: 0.88rem; color: #f59e0b; background: rgba(245, 158, 11, 0.1); border-right: 4px solid #f59e0b; padding: 10px 12px; border-radius: 6px;">
+            ⚠️ <b>ملاحظة تصحيحية هامة:</b> هذه اللغة ليست Regular Language؛ لأن عدد b مرتبط بعدد a بشرط (#b = #a + 1)، فلا يمكن كتابة تعبير نمطي (RE) مكافئ لها، وصيغة اللغة هي { aⁿ bⁿ⁺¹ | n ≥ 0 }.
+          </div>
+        </div>
+      </div>
+    `;
+
+    document.body.appendChild(modal);
+
+    modal.querySelector("#examCloseBtn").addEventListener("click", () => {
+      modal.hidden = true;
+    });
+    modal.querySelector("#examPrintBtn").addEventListener("click", () => {
+      window.print();
+    });
+  }
+
+  // Add Official Exam and Global Quiz buttons to Top Header
   function addHeaderExtraButtons() {
     const topActions = document.querySelector(".top-actions");
-    if (!topActions || document.getElementById("btnFlashcards")) return;
+    if (!topActions || document.getElementById("btnOfficialExam")) return;
 
+    // 1. Official Exam Modal Button
+    const examBtn = document.createElement("button");
+    examBtn.id = "btnOfficialExam";
+    examBtn.className = "top-btn";
+    examBtn.title = "حل ورقة الاختبار الفصلي الرسمي بالكامل (معتمد مع الرسومات)";
+    examBtn.style.cssText = "display: inline-flex; align-items: center; gap: 6px; background: rgba(245, 177, 61, 0.2); border: 1px solid var(--acc); color: var(--acc); font-weight: 800;";
+    examBtn.innerHTML = `<svg class="svg-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="txt">النموذج الفصلي الرسمي</span>`;
+    examBtn.addEventListener("click", createOfficialExamModal);
+
+    // 2. Global Toggle for all per-slide quizzes
+    const allQuizBtn = document.createElement("button");
+    allQuizBtn.id = "btnToggleAllQuizzes";
+    allQuizBtn.className = "top-btn";
+    allQuizBtn.title = "إظهار أو إخفاء أسئلة واقتباسات جميع السلايدات في وقت واحد";
+    allQuizBtn.style.cssText = "display: inline-flex; align-items: center; gap: 6px;";
+    allQuizBtn.innerHTML = `<svg class="svg-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg><span class="txt">أسئلة السلايدات</span>`;
+    allQuizBtn.addEventListener("click", () => {
+      globalQuizOpen = !globalQuizOpen;
+      allQuizBtn.classList.toggle("on", globalQuizOpen);
+      document.querySelectorAll(".sc-quiz-panel").forEach((p) => {
+        p.style.display = globalQuizOpen ? "block" : "none";
+      });
+      document.querySelectorAll(".quiz-btn").forEach((b) => {
+        b.classList.toggle("on", globalQuizOpen);
+      });
+    });
+
+    // 3. Flashcards Button
     const fcBtn = document.createElement("button");
     fcBtn.id = "btnFlashcards";
     fcBtn.className = "top-btn";
@@ -581,20 +906,30 @@
     fcBtn.addEventListener("click", createFlashcardsModal);
 
     topActions.insertBefore(fcBtn, topActions.firstChild);
+    topActions.insertBefore(allQuizBtn, topActions.firstChild);
+    topActions.insertBefore(examBtn, topActions.firstChild);
   }
 
   // Periodic check to attach UI enhancements smoothly
   if (document.readyState === "loading") {
     window.addEventListener("DOMContentLoaded", () => {
       addHeaderExtraButtons();
-      setInterval(attachSpeechButtons, 1500);
+      setInterval(() => {
+        attachSpeechButtons();
+        attachSlideExamBoxes();
+      }, 1000);
     });
   } else {
     addHeaderExtraButtons();
-    setInterval(attachSpeechButtons, 1500);
+    setInterval(() => {
+      attachSpeechButtons();
+      attachSlideExamBoxes();
+    }, 1000);
   }
 
   // Export functions to window
   window.speakText = speakText;
   window.openFlashcards = createFlashcardsModal;
+  window.openOfficialExam = createOfficialExamModal;
 })();
+
