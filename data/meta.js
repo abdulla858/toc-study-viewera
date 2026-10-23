@@ -10,7 +10,7 @@ window.TOC_META = {
       "slides": [
         {
           "n": 1,
-          "t": "Introduction to Theory"
+          "t": "Introduction to Theory of Computation"
         },
         {
           "n": 2,
@@ -18,155 +18,155 @@ window.TOC_META = {
         },
         {
           "n": 3,
-          "t": "نع ررقملا"
+          "t": "Why study the theory of computing?"
         },
         {
           "n": 4,
-          "t": "The Importance of Computational Theory in"
+          "t": "A pioneer of automata theory: Alan Turing"
         },
         {
           "n": 5,
-          "t": "Definition"
+          "t": "Theory of Computation: A Historical Perspective"
         },
         {
           "n": 6,
-          "t": "Introduction"
+          "t": "The Importance of Computational Theory in Computer Science"
         },
         {
           "n": 7,
-          "t": "Theory of Computation"
+          "t": "Definition"
         },
         {
           "n": 8,
-          "t": "Introduction"
+          "t": "Introduction: Three Major Branches"
         },
         {
           "n": 9,
-          "t": "Automata Theory"
+          "t": "Theory of Computation Hierarchy"
         },
         {
           "n": 10,
-          "t": "Computability Theory"
+          "t": "Automata Theory"
         },
         {
           "n": 11,
-          "t": "Complexity Theory"
+          "t": "Computability Theory"
         },
         {
           "n": 12,
-          "t": "Basic Concepts"
+          "t": "Complexity Theory"
         },
         {
           "n": 13,
-          "t": "alphabet"
+          "t": "Basic Concepts"
         },
         {
           "n": 14,
-          "t": "Strings"
+          "t": "alphabet"
         },
         {
           "n": 15,
-          "t": "Strings"
+          "t": "Strings: Definition"
         },
         {
           "n": 16,
-          "t": "Strings"
+          "t": "Strings: Length and Empty String"
         },
         {
           "n": 17,
-          "t": "Strings"
+          "t": "Strings: Kleene Star and Order"
         },
         {
           "n": 18,
-          "t": "Strings"
+          "t": "Strings: Concatenation"
         },
         {
           "n": 19,
-          "t": "Strings"
+          "t": "Strings: Powers of Strings"
         },
         {
           "n": 20,
-          "t": "Binary operations on strings"
+          "t": "Strings: Substrings"
         },
         {
           "n": 21,
-          "t": "Languages"
+          "t": "Binary operations: Prefix and Suffix"
         },
         {
           "n": 22,
-          "t": "Languages"
+          "t": "Languages: Formal Languages"
         },
         {
           "n": 23,
-          "t": "Languages"
+          "t": "Languages: Examples L0 and L1"
         },
         {
           "n": 24,
-          "t": "Languages"
+          "t": "Languages: Examples L2 and L3"
         },
         {
           "n": 25,
-          "t": "Set Relations and Operations"
+          "t": "Languages: Empty Language"
         },
         {
           "n": 26,
-          "t": ""
+          "t": "Set Relations: Subset"
         },
         {
           "n": 27,
-          "t": ""
+          "t": "Equal Sets"
         },
         {
           "n": 28,
-          "t": ""
+          "t": "Union"
         },
         {
           "n": 29,
-          "t": ""
+          "t": "Intersection"
         },
         {
           "n": 30,
-          "t": ""
+          "t": "Set Difference"
         },
         {
           "n": 31,
-          "t": ""
+          "t": "Complement"
         },
         {
           "n": 32,
-          "t": ""
+          "t": "Concatenation of Sets"
         },
         {
           "n": 33,
-          "t": ""
+          "t": "Concatenation Examples"
         },
         {
           "n": 34,
-          "t": ""
+          "t": "Cardinality"
         },
         {
           "n": 35,
-          "t": ""
+          "t": "Kleene Star Closure"
         },
         {
           "n": 36,
-          "t": ""
+          "t": "Kleene Star Examples"
         },
         {
           "n": 37,
-          "t": ""
+          "t": "Property: (S*)* = S*"
         },
         {
           "n": 38,
-          "t": ""
+          "t": "Positive Closure (S+)"
         },
         {
           "n": 39,
-          "t": "Summary of Sets and Relations"
+          "t": "Power Set (2^S)"
         },
         {
           "n": 40,
-          "t": "Graphs (Definitions & Types)"
+          "t": "Graphs"
         },
         {
           "n": 41,
@@ -429,142 +429,406 @@ window.TOC_META = {
     {
       "id": "L4",
       "file": "3379_Regular_expressions.pptx",
-      "ar": "التعبيرات النمطية RegEx",
-      "en": "Regular Expressions",
+      "ar": "الآلات غير الحتمية NFA",
+      "en": "Non-Deterministic Finite Automata",
       "teacher": "أ. وائل الوظاف",
-      "count": 33,
+      "count": 99,
       "slides": [
         {
           "n": 1,
-          "t": "Lecture 4"
+          "t": "Non-Deterministic Finite Automata (NFA)"
         },
         {
           "n": 2,
-          "t": "What is Regular Expression (Regex)?"
+          "t": "What is an NFA?"
         },
         {
           "n": 3,
-          "t": "Slide 3 out of 10"
+          "t": "How does a NFA work?"
         },
         {
           "n": 4,
-          "t": "Slide 4 out of 10"
+          "t": "Why do we use NFA?"
         },
         {
           "n": 5,
-          "t": "Slide 5 out of 10"
+          "t": "Nondeterministic finite accepters"
         },
         {
           "n": 6,
-          "t": "Slide 6 out of 10"
+          "t": "Deterministic finite accepters"
         },
         {
           "n": 7,
-          "t": "Examples of Regular Expressions"
+          "t": "L = {ambn : m, n  0}"
         },
         {
           "n": 8,
-          "t": "RegEx"
+          "t": "L = {ambn : m, n  0}"
         },
         {
           "n": 9,
-          "t": "RegEx"
+          "t": "L = {ambn : m, n  0}"
         },
         {
           "n": 10,
-          "t": "RegEx"
+          "t": "Alphabet ="
         },
         {
           "n": 11,
-          "t": "RegEx"
+          "t": "Two choices"
         },
         {
           "n": 12,
-          "t": "RegEx"
+          "t": "No transition"
         },
         {
           "n": 13,
-          "t": "RegEx"
+          "t": "First Choice"
         },
         {
           "n": 14,
-          "t": "Convert Regex to NFA"
+          "t": "First Choice"
         },
         {
           "n": 15,
-          "t": "Example 1&2: convert regex to an"
+          "t": "First Choice"
         },
         {
           "n": 16,
-          "t": "Example 3: convert regex=ab to an"
+          "t": "“accept”"
         },
         {
           "n": 17,
-          "t": "Example 3: convert regex=ab to an"
+          "t": "17"
         },
         {
           "n": 18,
-          "t": "Example 3: convert regex=ab to an"
+          "t": "18"
         },
         {
           "n": 19,
-          "t": "Example 4: convert regex=a* to an"
+          "t": "19"
         },
         {
           "n": 20,
-          "t": "Example 4: convert regex=a* to an"
+          "t": "20"
         },
         {
           "n": 21,
-          "t": "Example 5: convert regex=(ab)* to an"
+          "t": "21"
         },
         {
           "n": 22,
-          "t": "Example 5: convert regex=(ab)* to an"
+          "t": "مثال"
         },
         {
           "n": 23,
-          "t": "Convert regex with union"
+          "t": "23"
         },
         {
           "n": 24,
-          "t": "Convert regex with union"
+          "t": "24"
         },
         {
           "n": 25,
-          "t": "Example 7: convert a*b* to an"
+          "t": "25"
         },
         {
           "n": 26,
-          "t": "Example 7: convert a*b* to an"
+          "t": "26"
         },
         {
           "n": 27,
-          "t": "Slide 27 out of 15"
+          "t": "27"
         },
         {
           "n": 28,
-          "t": "Applications of Regular"
+          "t": "28"
         },
         {
           "n": 29,
-          "t": "Applications of  Regular expressions"
+          "t": "29"
         },
         {
           "n": 30,
-          "t": "Applications of Regular expressions"
+          "t": "Example :"
         },
         {
           "n": 31,
-          "t": "Applications of Regular expressions"
+          "t": "31"
         },
         {
           "n": 32,
-          "t": "Applications of Regular expressions"
+          "t": "32"
         },
         {
           "n": 33,
-          "t": "Applications of Regular expressions"
+          "t": "33"
+        },
+        {
+          "n": 34,
+          "t": "34"
+        },
+        {
+          "n": 35,
+          "t": "35"
+        },
+        {
+          "n": 36,
+          "t": "36"
+        },
+        {
+          "n": 37,
+          "t": "37"
+        },
+        {
+          "n": 38,
+          "t": "38"
+        },
+        {
+          "n": 39,
+          "t": "39"
+        },
+        {
+          "n": 40,
+          "t": "40"
+        },
+        {
+          "n": 41,
+          "t": "Lambda Transitions\u000bالانتقال بالكلمة الفا"
+        },
+        {
+          "n": 42,
+          "t": "42"
+        },
+        {
+          "n": 43,
+          "t": "43"
+        },
+        {
+          "n": 44,
+          "t": "44"
+        },
+        {
+          "n": 45,
+          "t": "45"
+        },
+        {
+          "n": 46,
+          "t": "46"
+        },
+        {
+          "n": 47,
+          "t": "47"
+        },
+        {
+          "n": 48,
+          "t": "48"
+        },
+        {
+          "n": 49,
+          "t": "49"
+        },
+        {
+          "n": 50,
+          "t": "50"
+        },
+        {
+          "n": 51,
+          "t": "51"
+        },
+        {
+          "n": 52,
+          "t": "52"
+        },
+        {
+          "n": 53,
+          "t": "53"
+        },
+        {
+          "n": 54,
+          "t": "54"
+        },
+        {
+          "n": 55,
+          "t": "55"
+        },
+        {
+          "n": 56,
+          "t": "56"
+        },
+        {
+          "n": 57,
+          "t": "57"
+        },
+        {
+          "n": 58,
+          "t": "58"
+        },
+        {
+          "n": 59,
+          "t": "59"
+        },
+        {
+          "n": 60,
+          "t": "60"
+        },
+        {
+          "n": 61,
+          "t": "61"
+        },
+        {
+          "n": 62,
+          "t": "62"
+        },
+        {
+          "n": 63,
+          "t": "63"
+        },
+        {
+          "n": 64,
+          "t": "64"
+        },
+        {
+          "n": 65,
+          "t": "65"
+        },
+        {
+          "n": 66,
+          "t": "66"
+        },
+        {
+          "n": 67,
+          "t": "Another NFA Example"
+        },
+        {
+          "n": 68,
+          "t": "68"
+        },
+        {
+          "n": 69,
+          "t": "69"
+        },
+        {
+          "n": 70,
+          "t": "70"
+        },
+        {
+          "n": 71,
+          "t": "التعريف الشكلي (الرياضي) لآلة الحالة الم"
+        },
+        {
+          "n": 72,
+          "t": "72"
+        },
+        {
+          "n": 73,
+          "t": "73"
+        },
+        {
+          "n": 74,
+          "t": "74"
+        },
+        {
+          "n": 75,
+          "t": "75"
+        },
+        {
+          "n": 76,
+          "t": "Extended Transition Function"
+        },
+        {
+          "n": 77,
+          "t": "77"
+        },
+        {
+          "n": 78,
+          "t": "78"
+        },
+        {
+          "n": 79,
+          "t": "The Language of an NFA"
+        },
+        {
+          "n": 80,
+          "t": "80"
+        },
+        {
+          "n": 81,
+          "t": "81"
+        },
+        {
+          "n": 82,
+          "t": "82"
+        },
+        {
+          "n": 83,
+          "t": "83"
+        },
+        {
+          "n": 84,
+          "t": "نقول أن الآلة تقبل المتسلسلة إذا أدت قرا"
+        },
+        {
+          "n": 85,
+          "t": "85"
+        },
+        {
+          "n": 86,
+          "t": "Some exercises"
+        },
+        {
+          "n": 87,
+          "t": "Some exercises"
+        },
+        {
+          "n": 88,
+          "t": "For any alphabet  , there exists a langu"
+        },
+        {
+          "n": 89,
+          "t": "Example 2"
+        },
+        {
+          "n": 90,
+          "t": "NDFA"
+        },
+        {
+          "n": 91,
+          "t": "NDFA"
+        },
+        {
+          "n": 92,
+          "t": "NDFA"
+        },
+        {
+          "n": 93,
+          "t": "NDFA"
+        },
+        {
+          "n": 94,
+          "t": "NDFA = DFA"
+        },
+        {
+          "n": 95,
+          "t": "NDFA  DFA"
+        },
+        {
+          "n": 96,
+          "t": "NDFA  DFA"
+        },
+        {
+          "n": 97,
+          "t": "NDFA  DFA"
+        },
+        {
+          "n": 98,
+          "t": "NDFA  DFA"
+        },
+        {
+          "n": 99,
+          "t": "Conclusion"
         }
       ]
     },
@@ -1015,318 +1279,194 @@ window.TOC_META = {
     {
       "id": "L7",
       "file": "lecture7_pda.pdf",
-      "ar": "الآلات ذات المكدس (PDA)",
+      "ar": "الآلات ذات المكدس PDA",
       "en": "Pushdown Automata",
       "teacher": "د. رويدا العامري",
-      "count": 77,
+      "count": 46,
       "slides": [
         {
           "n": 1,
-          "t": "Pushdown Automata PDAs"
+          "t": "Pushdown Automata\u000bPDAs"
         },
         {
           "n": 2,
-          "t": "Pushdown Automaton -- PDA"
+          "t": "Syllabus"
         },
         {
           "n": 3,
-          "t": "Initial Stack Symbol"
+          "t": "Introduction"
         },
         {
           "n": 4,
-          "t": "The States"
+          "t": "Introduction"
         },
         {
           "n": 5,
-          "t": "Transition Execution: a, b -> c"
+          "t": "What is a stack?"
         },
         {
           "n": 6,
-          "t": "Push Operation: a, lambda -> c"
+          "t": "Pushdown Automaton has three component"
         },
         {
           "n": 7,
-          "t": "Pop Operation: a, b -> lambda"
+          "t": "Components of a PDA"
         },
         {
           "n": 8,
-          "t": "No-op Operation: a, lambda -> lambda"
+          "t": "8"
         },
         {
           "n": 9,
-          "t": "Non-Determinism"
+          "t": "Difference Between an FA and a PDA"
         },
         {
           "n": 10,
-          "t": "NPDA: Non-Deterministic PDA Example"
+          "t": "Types of PDAs"
         },
         {
           "n": 11,
-          "t": "Execution Example: Time 0"
+          "t": "Why do we need a PDA?"
         },
         {
           "n": 12,
-          "t": "Time 1"
+          "t": "Transition in a PDA"
         },
         {
           "n": 13,
-          "t": "Time 2"
+          "t": "Transition in a PDA"
         },
         {
           "n": 14,
-          "t": "Time 3"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 15,
-          "t": "Time 4"
+          "t": "Graphical notation"
         },
         {
           "n": 16,
-          "t": "Time 5"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 17,
-          "t": "Time 6"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 18,
-          "t": "Time 7"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 19,
-          "t": "Time 8"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 20,
-          "t": "A string is accepted if:"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 21,
-          "t": "The input string aaabbb is accepted by the NPDA"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 22,
-          "t": "In general: L = {a^n b^n : n >= 0}"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 23,
-          "t": "Another NPDA example"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 24,
-          "t": "L(M) = {ww^R}"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 25,
-          "t": "Execution Example: Time 0"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 26,
-          "t": "Time 1"
+          "t": "26"
         },
         {
           "n": 27,
-          "t": "Time 2"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 28,
-          "t": "Time 3"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 29,
-          "t": "Time 4"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 30,
-          "t": "Time 5"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 31,
-          "t": "Time 6"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 32,
-          "t": "Pushing Strings"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 33,
-          "t": "Example: a, b -> cdf"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 34,
-          "t": "Another NPDA example: Equal a's and b's"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 35,
-          "t": "L(M) = {w: n_a = n_b}"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 36,
-          "t": "Execution: Time 0"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 37,
-          "t": "Time 1"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 38,
-          "t": "Time 3"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 39,
-          "t": "Time 4"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 40,
-          "t": "Time 5"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 41,
-          "t": "Time 6"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 42,
-          "t": "Time 7"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 43,
-          "t": "Time 8"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 44,
-          "t": "Formalities for NPDAs"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 45,
-          "t": "Transition function"
+          "t": "IMAGE_SLIDE"
         },
         {
           "n": 46,
-          "t": "Transition function: Branching"
-        },
-        {
-          "n": 47,
-          "t": "Formal Definition: NPDA"
-        },
-        {
-          "n": 48,
-          "t": "Instantaneous Description"
-        },
-        {
-          "n": 49,
-          "t": "Example: Instantaneous Description (Time 4)"
-        },
-        {
-          "n": 50,
-          "t": "Example: Instantaneous Description (Time 5)"
-        },
-        {
-          "n": 51,
-          "t": "We write: ID Transition"
-        },
-        {
-          "n": 52,
-          "t": "A computation"
-        },
-        {
-          "n": 53,
-          "t": "For convenience we write: Multistep Transition"
-        },
-        {
-          "n": 54,
-          "t": "Formal Definition: Language of NPDA M"
-        },
-        {
-          "n": 55,
-          "t": "Example: aaabbb in L(M)"
-        },
-        {
-          "n": 56,
-          "t": "a^n b^n in L(M)"
-        },
-        {
-          "n": 57,
-          "t": "Therefore: L(M) = {a^n b^n : n >= 0}"
-        },
-        {
-          "n": 58,
-          "t": "Converting Context-Free Grammars to NPDAs"
-        },
-        {
-          "n": 59,
-          "t": "An example grammar"
-        },
-        {
-          "n": 60,
-          "t": "Grammar to NPDA Construction"
-        },
-        {
-          "n": 61,
-          "t": "The NPDA simulates leftmost derivations"
-        },
-        {
-          "n": 62,
-          "t": "A leftmost derivation: abab"
-        },
-        {
-          "n": 63,
-          "t": "NPDA execution: Time 0"
-        },
-        {
-          "n": 64,
-          "t": "Time 1"
-        },
-        {
-          "n": 65,
-          "t": "Time 2"
-        },
-        {
-          "n": 66,
-          "t": "Time 3"
-        },
-        {
-          "n": 67,
-          "t": "Time 4"
-        },
-        {
-          "n": 68,
-          "t": "Time 5"
-        },
-        {
-          "n": 69,
-          "t": "Time 6"
-        },
-        {
-          "n": 70,
-          "t": "Time 7"
-        },
-        {
-          "n": 71,
-          "t": "Time 8"
-        },
-        {
-          "n": 72,
-          "t": "Time 9"
-        },
-        {
-          "n": 73,
-          "t": "Time 10"
-        },
-        {
-          "n": 74,
-          "t": "In general: CFG to NPDA Equivalence"
-        },
-        {
-          "n": 75,
-          "t": "Constructing NPDA M from grammar G"
-        },
-        {
-          "n": 76,
-          "t": "Equivalence: Grammar G generates w iff NPDA M accepts w"
-        },
-        {
-          "n": 77,
-          "t": "Therefore: CFLs and NPDAs Equivalence"
+          "t": "The Relationship Between FA, PDA, and th"
         }
       ]
     },
