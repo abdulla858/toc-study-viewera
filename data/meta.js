@@ -10,175 +10,175 @@ window.TOC_META = {
       "slides": [
         {
           "n": 1,
-          "t": "Introduction to Theory of Computation"
+          "t": "مقدمة في نظرية الحوسبة (Introduction to Theory of Computation)"
         },
         {
           "n": 2,
-          "t": "Syllabus"
+          "t": "مفردات المقرر (Syllabus)"
         },
         {
           "n": 3,
-          "t": "Why study the theory of computing?"
+          "t": "لماذا ندرس نظرية الحوسبة؟ (Why study the theory of computing?)"
         },
         {
           "n": 4,
-          "t": "A pioneer of automata theory: Alan Turing"
+          "t": "رائد نظرية الآلات: آلان تورنغ (1912 - 1954)"
         },
         {
           "n": 5,
-          "t": "Theory of Computation: A Historical Perspective"
+          "t": "نظرية الحوسبة: منظور تاريخي (Theory of Computation: A Historical Perspective)"
         },
         {
           "n": 6,
-          "t": "The Importance of Computational Theory in Computer Science"
+          "t": "أهمية النظرية الحوسبية في علوم الحاسب (The Importance of Computational Theory in Computer Science)"
         },
         {
           "n": 7,
-          "t": "Definition"
+          "t": "التعريف (Definition)"
         },
         {
           "n": 8,
-          "t": "Introduction: Three Major Branches"
+          "t": "مقدمة: فروع النظرية الثلاثة (Introduction)"
         },
         {
           "n": 9,
-          "t": "Theory of Computation Hierarchy"
+          "t": "مخطط هيكلي شجري لفروع نظرية الحوسبة (Theory of Computation)"
         },
         {
           "n": 10,
-          "t": "Automata Theory"
+          "t": "نظرية الآلات الذاتية (Automata Theory)"
         },
         {
           "n": 11,
-          "t": "Computability Theory"
+          "t": "نظرية قابلية الحوسبة (Computability Theory)"
         },
         {
           "n": 12,
-          "t": "Complexity Theory"
+          "t": "نظرية التعقيد الحسابي (Complexity Theory)"
         },
         {
           "n": 13,
-          "t": "Basic Concepts"
+          "t": "المفاهيم الأساسية (Basic Concepts)"
         },
         {
           "n": 14,
-          "t": "alphabet"
+          "t": "الأبجدية (Alphabet)"
         },
         {
           "n": 15,
-          "t": "Strings: Definition"
+          "t": "السلاسل النصية (Strings)"
         },
         {
           "n": 16,
-          "t": "Strings: Length and Empty String"
+          "t": "طول السلسلة والسلسلة الفارغة (String Length & Empty String)"
         },
         {
           "n": 17,
-          "t": "Strings: Kleene Star and Order"
+          "t": "نجمة كلين والترتيب المعجمي (Kleene Star & Lexicographic Order)"
         },
         {
           "n": 18,
-          "t": "Strings: Concatenation"
+          "t": "عملية الدمج (Concatenation)"
         },
         {
           "n": 19,
-          "t": "Strings: Powers of Strings"
+          "t": "قوة السلسلة والتكرار (Powers of Strings)"
         },
         {
           "n": 20,
-          "t": "Strings: Substrings"
+          "t": "السلسلة الجزئية (Substring)"
         },
         {
           "n": 21,
-          "t": "Binary operations: Prefix and Suffix"
+          "t": "البادئة واللاحقة (Prefix and Suffix)"
         },
         {
           "n": 22,
-          "t": "Languages: Formal Languages"
+          "t": "اللغات الصورية (Formal Languages)"
         },
         {
           "n": 23,
-          "t": "Languages: Examples L0 and L1"
+          "t": "أمثلة على بناء اللغات الصورية (Language Examples - 1)"
         },
         {
           "n": 24,
-          "t": "Languages: Examples L2 and L3"
+          "t": "أمثلة على بناء اللغات الصورية (Language Examples - 2)"
         },
         {
           "n": 25,
-          "t": "Languages: Empty Language"
+          "t": "اللغة الفارغة وحجم اللغات (Empty Language & Cardinality)"
         },
         {
           "n": 26,
-          "t": "Set Relations: Subset"
+          "t": "علاقات المجموعات: المجموعة الجزئية (Set Relations: Subset)"
         },
         {
           "n": 27,
-          "t": "Equal Sets"
+          "t": "المجموعات المتساوية (Equal Sets)"
         },
         {
           "n": 28,
-          "t": "Union"
+          "t": "الاتحاد (Union)"
         },
         {
           "n": 29,
-          "t": "Intersection"
+          "t": "التقاطع (Intersection)"
         },
         {
           "n": 30,
-          "t": "Set Difference"
+          "t": "طرح المجموعات / الفرق (Set Difference)"
         },
         {
           "n": 31,
-          "t": "Complement"
+          "t": "المتممة (Complement)"
         },
         {
           "n": 32,
-          "t": "Concatenation of Sets"
+          "t": "دمج المجموعات اللغوية (Concatenation of Sets)"
         },
         {
           "n": 33,
-          "t": "Concatenation Examples"
+          "t": "أمثلة وخصائص دمج المجموعات (Concatenation Examples)"
         },
         {
           "n": 34,
-          "t": "Cardinality"
+          "t": "العَدَدِيّة وحجم المجموعات (Cardinality)"
         },
         {
           "n": 35,
-          "t": "Kleene Star Closure"
+          "t": "انغلاق نجمة كلين للمجموعات (Kleene Star Closure: S*)"
         },
         {
           "n": 36,
-          "t": "Kleene Star Examples"
+          "t": "أمثلة على انغلاق نجمة كلين (Kleene Star Examples)"
         },
         {
           "n": 37,
-          "t": "Property: (S*)* = S*"
+          "t": "خاصية الانغلاق المتكرر (Property: (S*)* = S*)"
         },
         {
           "n": 38,
-          "t": "Positive Closure (S+)"
+          "t": "الانغلاق الموجب (Positive Closure: S⁺)"
         },
         {
           "n": 39,
-          "t": "Power Set (2^S)"
+          "t": "مجموعة القوى (Power Set: 2^S)"
         },
         {
           "n": 40,
-          "t": "Graphs"
+          "t": "المخططات والرسوم البيانية (Graphs)"
         },
         {
           "n": 41,
-          "t": "Example of Directed Graph"
+          "t": "مثال المخطط الموجه وخصائصه (Example of Directed Graph)"
         },
         {
           "n": 42,
-          "t": "Boolean Logic"
+          "t": "المنطق البولياني (Boolean Logic)"
         },
         {
           "n": 43,
-          "t": "Some Properties of Boolean Logic"
+          "t": "خصائص وقوانين المنطق البولياني (Some Properties of Boolean Logic)"
         }
       ]
     },
@@ -192,59 +192,59 @@ window.TOC_META = {
       "slides": [
         {
           "n": 1,
-          "t": "Finite Automaton"
+          "t": "Finite Automaton (الأوتوماتون المنتهي)"
         },
         {
           "n": 2,
-          "t": "Syllabus"
+          "t": "Syllabus (مفردات المحتوى)"
         },
         {
           "n": 3,
-          "t": "Finite Automata"
+          "t": "Finite Automata (الأوتوماتون المنتهي)"
         },
         {
           "n": 4,
-          "t": "introduction"
+          "t": "introduction (مقدمة)"
         },
         {
           "n": 5,
-          "t": ""
+          "t": "ما هي الـ Regular Language؟ (اللغات المنتظمة)"
         },
         {
           "n": 6,
-          "t": "Finite Automata(definition)"
+          "t": "Finite Automata(definition) (تعريف الأوتوماتون المنتهي)"
         },
         {
           "n": 7,
-          "t": "It consists of five main elements:"
+          "t": "Finite Automata(elements) (عناصر الأوتوماتون المنتهي)"
         },
         {
           "n": 8,
-          "t": "§How a finite automaton works?"
+          "t": "Finite Automata(work) (آلية عمل الأوتوماتون المنتهي)"
         },
         {
           "n": 9,
-          "t": "Finite Automata(types)"
+          "t": "Finite Automata(types) (أنواع الأوتوماتون المنتهي)"
         },
         {
           "n": 10,
-          "t": "deterministic finite automaton ( DFA) : It is called deterministic bec"
+          "t": "Finite Automata(types) (أنواع الأوتوماتون المنتهي)"
         },
         {
           "n": 11,
-          "t": "Comparison between DFA and"
+          "t": "Comparison between DFA and NFA (مقارنة بين DFA و NFA)"
         },
         {
           "n": 12,
-          "t": "Deterministic Finite Automata (DFA)"
+          "t": "Deterministic Finite Automata (DFA) (الأوتوماتون المنتهي الحتمي)"
         },
         {
           "n": 13,
-          "t": "Non-Deterministic Finite Automata"
+          "t": "Non-Deterministic Finite Automata (NFA) (الأوتوماتون المنتهي غير الحتمي)"
         },
         {
           "n": 14,
-          "t": "Regular Expression"
+          "t": "Regular Expression (التعبيرات المنتظمة)"
         }
       ]
     },
@@ -258,95 +258,95 @@ window.TOC_META = {
       "slides": [
         {
           "n": 1,
-          "t": "Deterministic Finite"
+          "t": "آلات الحالة المنتهية المحددة (DFA - Deterministic Finite Automata)"
         },
         {
           "n": 2,
-          "t": "Syllabus"
+          "t": "مفردات المقرر (Syllabus)"
         },
         {
           "n": 3,
-          "t": "What is a DFA?"
+          "t": "ما هو الـ DFA؟ (What is a DFA?)"
         },
         {
           "n": 4,
-          "t": "Formal Definition of DFA"
+          "t": "التعريف الرياضي لـ DFA (Formal Definition of DFA)"
         },
         {
           "n": 5,
-          "t": "Deterministic Finite Automata"
+          "t": "آلات الحالة المنتهية المحددة (Deterministic Finite Automata)"
         },
         {
           "n": 6,
-          "t": "How does a DFA work?"
+          "t": "كيف يعمل الـ DFA؟ (How does a DFA work?)"
         },
         {
           "n": 7,
-          "t": "How does a DFA work?"
+          "t": "كيف يعمل الـ DFA؟ (How does a DFA work?)"
         },
         {
           "n": 8,
-          "t": "Pictorial representation of DFA"
+          "t": "التمثيل الرسومي لـ DFA (Pictorial representation of DFA)"
         },
         {
           "n": 9,
-          "t": "Example: Diagram of DFA"
+          "t": "مثال: مخطط الـ DFA (Example: Diagram of DFA)"
         },
         {
           "n": 10,
-          "t": "Step-By-Step"
+          "t": "خطوة بخطوة (Step-By-Step)"
         },
         {
           "n": 11,
-          "t": "Example: Diagram of DFA"
+          "t": "مثال: مخطط DFA (Example: Diagram of DFA)"
         },
         {
           "n": 12,
-          "t": "Step-By-Step"
+          "t": "خطوة بخطوة (Step-By-Step)"
         },
         {
           "n": 13,
-          "t": "Step-By-Step"
+          "t": "خطوة بخطوة (Step-By-Step)"
         },
         {
           "n": 14,
-          "t": "Transition Graph"
+          "t": "مثال 1: مخطط الانتقال (Example 1: Transition Graph)"
         },
         {
           "n": 15,
-          "t": "Initial Configuration"
+          "t": "التهيئة الأولية (Initial Configuration)"
         },
         {
           "n": 16,
-          "t": "a b b a"
+          "t": "رسم: استمرار تتبع معالجة السلسلة 'abba' على شريط المدخلات:"
         },
         {
           "n": 17,
-          "t": "a b b a"
+          "t": "رسم: خطوة قراءة الرمز الأخير في السلسلة 'abba':"
         },
         {
           "n": 18,
-          "t": "Output: “accept”"
+          "t": "انتهاء المدخلات (Input finished)"
         },
         {
           "n": 19,
-          "t": "Rejection"
+          "t": "الرفض (Rejection)"
         },
         {
           "n": 20,
-          "t": "a b a"
+          "t": "رسم: الخطوة الأولى في تتبع السلسلة المرفوضة 'aba':"
         },
         {
           "n": 21,
-          "t": "a b a"
+          "t": "رسم: تتبع DFA على شريط الدخل 'aba' - قراءة الرمز الثاني 'b' من الحالة q1 والانتقال إلى الحالة q2."
         },
         {
           "n": 22,
-          "t": "a b a"
+          "t": "رسم: تتبع DFA على شريط الدخل 'aba' - قراءة الرمز الثالث 'a' من الحالة q2 والانتقال إلى حالة المصيدة q5."
         },
         {
           "n": 23,
-          "t": "Output:"
+          "t": "Input finished"
         },
         {
           "n": 24,
@@ -354,19 +354,19 @@ window.TOC_META = {
         },
         {
           "n": 25,
-          "t": ""
+          "t": "رسم: تتبع المثال 2 - قراءة الرمز الأول 'a' من الحالة q0 وتنفيذ الانتقال الذاتي δ(q0, a) = q0."
         },
         {
           "n": 26,
-          "t": ""
+          "t": "رسم: تتبع المثال 2 - قراءة الرمز الثاني 'a' من الحالة q0 وتنفيذ الانتقال الذاتي δ(q0, a) = q0 مرة أخرى."
         },
         {
           "n": 27,
-          "t": ""
+          "t": "رسم: تتبع المثال 2 - قراءة الرمز الثالث 'b' من الحالة q0 والانتقال إلى حالة القبول q1."
         },
         {
           "n": 28,
-          "t": "Output: “accept”"
+          "t": "Input finished"
         },
         {
           "n": 29,
@@ -374,51 +374,51 @@ window.TOC_META = {
         },
         {
           "n": 30,
-          "t": ""
+          "t": "تتبع قراءة السلسلة في آلة DFA — الخطوة 30"
         },
         {
           "n": 31,
-          "t": ""
+          "t": "استمرار معالجة الإدخال في DFA — الخطوة 31"
         },
         {
           "n": 32,
-          "t": ""
+          "t": "اكتمال استهلاك شريط الإدخال في DFA — الخطوة 32"
         },
         {
           "n": 33,
-          "t": "Output: “reject”"
+          "t": "قرار رفض السلسلة في DFA (Output: Reject)"
         },
         {
           "n": 34,
-          "t": "Components of DFA:"
+          "t": "المكونات الخمسة لآلة DFA الصورية (Components of DFA)"
         },
         {
           "n": 35,
-          "t": "3.  Initial State"
+          "t": "المكون الثالث: الحالة الابتدائية (Initial State: q₀ ∈ Q)"
         },
         {
           "n": 36,
-          "t": "4. Set of Final States:"
+          "t": "المكون الرابع: مجموعة الحالات النهائية للقبول (Final States: F ⊆ Q)"
         },
         {
           "n": 37,
-          "t": "5.  Transition Function:"
+          "t": "المكون الخامس: دالة الانتقال الحتمية (Transition Function: δ)"
         },
         {
           "n": 38,
-          "t": ""
+          "t": "δ(q0, a) = q1"
         },
         {
           "n": 39,
-          "t": ""
+          "t": "δ(q0, b) = q5"
         },
         {
           "n": 40,
-          "t": ""
+          "t": "δ(q2, b) = q3"
         },
         {
           "n": 41,
-          "t": "Transition Function"
+          "t": "Transition Function    δ"
         },
         {
           "n": 42,
@@ -436,399 +436,399 @@ window.TOC_META = {
       "slides": [
         {
           "n": 1,
-          "t": "Non-Deterministic Finite Automata (NFA)"
+          "t": "الآلات المنتهية غير الحتمية (Non-Deterministic Finite Automata - NFA)"
         },
         {
           "n": 2,
-          "t": "What is an NFA?"
+          "t": "ما هي الآلة غير الحتمية؟ (What is an NFA?)"
         },
         {
           "n": 3,
-          "t": "How does a NFA work?"
+          "t": "كيف تعمل الـ NFA؟ (How does an NFA work?)"
         },
         {
           "n": 4,
-          "t": "Why do we use NFA?"
+          "t": "لماذا نستخدم الـ NFA؟ (Why do we use NFA?)"
         },
         {
           "n": 5,
-          "t": "Nondeterministic finite accepters"
+          "t": "التعريف الصوري لـ NFA (Formal Definition of NFA)"
         },
         {
           "n": 6,
-          "t": "Deterministic finite accepters"
+          "t": "المقارنة الصورية بين DFA و NFA"
         },
         {
           "n": 7,
-          "t": "L = {ambn : m, n  0}"
+          "t": "L = {ambn : m, n  0} (الشريحة 7)"
         },
         {
           "n": 8,
-          "t": "L = {ambn : m, n  0}"
+          "t": "L = {ambn : m, n  0} (الشريحة 8)"
         },
         {
           "n": 9,
-          "t": "L = {ambn : m, n  0}"
+          "t": "L = {ambn : m, n  0} (الشريحة 9)"
         },
         {
           "n": 10,
-          "t": "Alphabet ="
+          "t": "Alphabet = (الشريحة 10)"
         },
         {
           "n": 11,
-          "t": "Two choices"
+          "t": "Two choices (الشريحة 11)"
         },
         {
           "n": 12,
-          "t": "No transition"
+          "t": "No transition (الشريحة 12)"
         },
         {
           "n": 13,
-          "t": "First Choice"
+          "t": "First Choice (الشريحة 13)"
         },
         {
           "n": 14,
-          "t": "First Choice"
+          "t": "First Choice (الشريحة 14)"
         },
         {
           "n": 15,
-          "t": "First Choice"
+          "t": "First Choice (الشريحة 15)"
         },
         {
           "n": 16,
-          "t": "“accept”"
+          "t": "“accept” (الشريحة 16)"
         },
         {
           "n": 17,
-          "t": "17"
+          "t": "تتبع المسار الحوسبي في NFA — الخيار الثاني وحالة التعليق (الشريحة 17)"
         },
         {
           "n": 18,
-          "t": "18"
+          "t": "تتبع المسار الحوسبي في NFA — الخيار الثاني وحالة التعليق (الشريحة 18)"
         },
         {
           "n": 19,
-          "t": "19"
+          "t": "تتبع المسار الحوسبي في NFA — الخيار الثاني وحالة التعليق (الشريحة 19)"
         },
         {
           "n": 20,
-          "t": "20"
+          "t": "تتبع المسار الحوسبي في NFA — الخيار الثاني وحالة التعليق (الشريحة 20)"
         },
         {
           "n": 21,
-          "t": "21"
+          "t": "معيار القبول والرفض وتفرع المسارات في NFA (الشريحة 21)"
         },
         {
           "n": 22,
-          "t": "مثال"
+          "t": "مثال (الشريحة 22)"
         },
         {
           "n": 23,
-          "t": "23"
+          "t": "معيار القبول والرفض وتفرع المسارات في NFA (الشريحة 23)"
         },
         {
           "n": 24,
-          "t": "24"
+          "t": "معيار القبول والرفض وتفرع المسارات في NFA (الشريحة 24)"
         },
         {
           "n": 25,
-          "t": "25"
+          "t": "معيار القبول والرفض وتفرع المسارات في NFA (الشريحة 25)"
         },
         {
           "n": 26,
-          "t": "26"
+          "t": "معيار القبول والرفض وتفرع المسارات في NFA (الشريحة 26)"
         },
         {
           "n": 27,
-          "t": "27"
+          "t": "معيار القبول والرفض وتفرع المسارات في NFA (الشريحة 27)"
         },
         {
           "n": 28,
-          "t": "28"
+          "t": "معيار القبول والرفض وتفرع المسارات في NFA (الشريحة 28)"
         },
         {
           "n": 29,
-          "t": "29"
+          "t": "معيار القبول والرفض وتفرع المسارات في NFA (الشريحة 29)"
         },
         {
           "n": 30,
-          "t": "Example :"
+          "t": "Example : (الشريحة 30)"
         },
         {
           "n": 31,
-          "t": "31"
+          "t": "أمثلة الحوسبة المتوازية وتتبع خيارات القبول (الشريحة 31)"
         },
         {
           "n": 32,
-          "t": "32"
+          "t": "أمثلة الحوسبة المتوازية وتتبع خيارات القبول (الشريحة 32)"
         },
         {
           "n": 33,
-          "t": "33"
+          "t": "أمثلة الحوسبة المتوازية وتتبع خيارات القبول (الشريحة 33)"
         },
         {
           "n": 34,
-          "t": "34"
+          "t": "أمثلة الحوسبة المتوازية وتتبع خيارات القبول (الشريحة 34)"
         },
         {
           "n": 35,
-          "t": "35"
+          "t": "أمثلة الحوسبة المتوازية وتتبع خيارات القبول (الشريحة 35)"
         },
         {
           "n": 36,
-          "t": "36"
+          "t": "أمثلة الحوسبة المتوازية وتتبع خيارات القبول (الشريحة 36)"
         },
         {
           "n": 37,
-          "t": "37"
+          "t": "أمثلة الحوسبة المتوازية وتتبع خيارات القبول (الشريحة 37)"
         },
         {
           "n": 38,
-          "t": "38"
+          "t": "أمثلة الحوسبة المتوازية وتتبع خيارات القبول (الشريحة 38)"
         },
         {
           "n": 39,
-          "t": "39"
+          "t": "أمثلة الحوسبة المتوازية وتتبع خيارات القبول (الشريحة 39)"
         },
         {
           "n": 40,
-          "t": "40"
+          "t": "أمثلة الحوسبة المتوازية وتتبع خيارات القبول (الشريحة 40)"
         },
         {
           "n": 41,
-          "t": "Lambda Transitions\u000bالانتقال بالكلمة الفا"
+          "t": "Lambda Transitions\\u000bالانتقال بالكلمة الفارغة (الشريحة 41)"
         },
         {
           "n": 42,
-          "t": "42"
+          "t": "أمثلة الحوسبة المتوازية وتتبع خيارات القبول (الشريحة 42)"
         },
         {
           "n": 43,
-          "t": "43"
+          "t": "أمثلة الحوسبة المتوازية وتتبع خيارات القبول (الشريحة 43)"
         },
         {
           "n": 44,
-          "t": "44"
+          "t": "أمثلة الحوسبة المتوازية وتتبع خيارات القبول (الشريحة 44)"
         },
         {
           "n": 45,
-          "t": "45"
+          "t": "أمثلة الحوسبة المتوازية وتتبع خيارات القبول (الشريحة 45)"
         },
         {
           "n": 46,
-          "t": "46"
+          "t": "انتقالات إبسيلون (ε-Transitions) وحساب الإغلاق (الشريحة 46)"
         },
         {
           "n": 47,
-          "t": "47"
+          "t": "انتقالات إبسيلون (ε-Transitions) وحساب الإغلاق (الشريحة 47)"
         },
         {
           "n": 48,
-          "t": "48"
+          "t": "انتقالات إبسيلون (ε-Transitions) وحساب الإغلاق (الشريحة 48)"
         },
         {
           "n": 49,
-          "t": "49"
+          "t": "انتقالات إبسيلون (ε-Transitions) وحساب الإغلاق (الشريحة 49)"
         },
         {
           "n": 50,
-          "t": "50"
+          "t": "انتقالات إبسيلون (ε-Transitions) وحساب الإغلاق (الشريحة 50)"
         },
         {
           "n": 51,
-          "t": "51"
+          "t": "انتقالات إبسيلون (ε-Transitions) وحساب الإغلاق (الشريحة 51)"
         },
         {
           "n": 52,
-          "t": "52"
+          "t": "انتقالات إبسيلون (ε-Transitions) وحساب الإغلاق (الشريحة 52)"
         },
         {
           "n": 53,
-          "t": "53"
+          "t": "انتقالات إبسيلون (ε-Transitions) وحساب الإغلاق (الشريحة 53)"
         },
         {
           "n": 54,
-          "t": "54"
+          "t": "انتقالات إبسيلون (ε-Transitions) وحساب الإغلاق (الشريحة 54)"
         },
         {
           "n": 55,
-          "t": "55"
+          "t": "انتقالات إبسيلون (ε-Transitions) وحساب الإغلاق (الشريحة 55)"
         },
         {
           "n": 56,
-          "t": "56"
+          "t": "انتقالات إبسيلون (ε-Transitions) وحساب الإغلاق (الشريحة 56)"
         },
         {
           "n": 57,
-          "t": "57"
+          "t": "انتقالات إبسيلون (ε-Transitions) وحساب الإغلاق (الشريحة 57)"
         },
         {
           "n": 58,
-          "t": "58"
+          "t": "انتقالات إبسيلون (ε-Transitions) وحساب الإغلاق (الشريحة 58)"
         },
         {
           "n": 59,
-          "t": "59"
+          "t": "انتقالات إبسيلون (ε-Transitions) وحساب الإغلاق (الشريحة 59)"
         },
         {
           "n": 60,
-          "t": "60"
+          "t": "انتقالات إبسيلون (ε-Transitions) وحساب الإغلاق (الشريحة 60)"
         },
         {
           "n": 61,
-          "t": "61"
+          "t": "تتبع لغات NFA وحساب الانتقال الممتد δ* (الشريحة 61)"
         },
         {
           "n": 62,
-          "t": "62"
+          "t": "تتبع لغات NFA وحساب الانتقال الممتد δ* (الشريحة 62)"
         },
         {
           "n": 63,
-          "t": "63"
+          "t": "تتبع لغات NFA وحساب الانتقال الممتد δ* (الشريحة 63)"
         },
         {
           "n": 64,
-          "t": "64"
+          "t": "تتبع لغات NFA وحساب الانتقال الممتد δ* (الشريحة 64)"
         },
         {
           "n": 65,
-          "t": "65"
+          "t": "تتبع لغات NFA وحساب الانتقال الممتد δ* (الشريحة 65)"
         },
         {
           "n": 66,
-          "t": "66"
+          "t": "تتبع لغات NFA وحساب الانتقال الممتد δ* (الشريحة 66)"
         },
         {
           "n": 67,
-          "t": "Another NFA Example"
+          "t": "Another NFA Example (الشريحة 67)"
         },
         {
           "n": 68,
-          "t": "68"
+          "t": "تتبع لغات NFA وحساب الانتقال الممتد δ* (الشريحة 68)"
         },
         {
           "n": 69,
-          "t": "69"
+          "t": "تتبع لغات NFA وحساب الانتقال الممتد δ* (الشريحة 69)"
         },
         {
           "n": 70,
-          "t": "70"
+          "t": "تتبع لغات NFA وحساب الانتقال الممتد δ* (الشريحة 70)"
         },
         {
           "n": 71,
-          "t": "التعريف الشكلي (الرياضي) لآلة الحالة الم"
+          "t": "التعريف الشكلي (الرياضي) لآلة الحالة المنتهية الغير محدودة (NFA) (الشريحة 71)"
         },
         {
           "n": 72,
-          "t": "72"
+          "t": "تتبع لغات NFA وحساب الانتقال الممتد δ* (الشريحة 72)"
         },
         {
           "n": 73,
-          "t": "73"
+          "t": "تتبع لغات NFA وحساب الانتقال الممتد δ* (الشريحة 73)"
         },
         {
           "n": 74,
-          "t": "74"
+          "t": "تتبع لغات NFA وحساب الانتقال الممتد δ* (الشريحة 74)"
         },
         {
           "n": 75,
-          "t": "75"
+          "t": "تتبع لغات NFA وحساب الانتقال الممتد δ* (الشريحة 75)"
         },
         {
           "n": 76,
-          "t": "Extended Transition Function"
+          "t": "Extended Transition Function (الشريحة 76)"
         },
         {
           "n": 77,
-          "t": "77"
+          "t": "خوارزمية تحويل NFA إلى DFA — بناء المجموعات الجزئية (الشريحة 77)"
         },
         {
           "n": 78,
-          "t": "78"
+          "t": "خوارزمية تحويل NFA إلى DFA — بناء المجموعات الجزئية (الشريحة 78)"
         },
         {
           "n": 79,
-          "t": "The Language of an NFA"
+          "t": "The Language of an NFA (الشريحة 79)"
         },
         {
           "n": 80,
-          "t": "80"
+          "t": "خوارزمية تحويل NFA إلى DFA — بناء المجموعات الجزئية (الشريحة 80)"
         },
         {
           "n": 81,
-          "t": "81"
+          "t": "خوارزمية تحويل NFA إلى DFA — بناء المجموعات الجزئية (الشريحة 81)"
         },
         {
           "n": 82,
-          "t": "82"
+          "t": "خوارزمية تحويل NFA إلى DFA — بناء المجموعات الجزئية (الشريحة 82)"
         },
         {
           "n": 83,
-          "t": "83"
+          "t": "خوارزمية تحويل NFA إلى DFA — بناء المجموعات الجزئية (الشريحة 83)"
         },
         {
           "n": 84,
-          "t": "نقول أن الآلة تقبل المتسلسلة إذا أدت قرا"
+          "t": "نقول أن الآلة تقبل المتسلسلة إذا أدت قراءة المتسلسلة إلى مجموعة حالات بينها واحدة على الأقل تنتمي إلى F (مجموعة حالات القبول). (الشريحة 84)"
         },
         {
           "n": 85,
-          "t": "85"
+          "t": "خوارزمية تحويل NFA إلى DFA — بناء المجموعات الجزئية (الشريحة 85)"
         },
         {
           "n": 86,
-          "t": "Some exercises"
+          "t": "Some exercises (الشريحة 86)"
         },
         {
           "n": 87,
-          "t": "Some exercises"
+          "t": "Some exercises (الشريحة 87)"
         },
         {
           "n": 88,
-          "t": "For any alphabet  , there exists a langu"
+          "t": "For any alphabet  , there exists a language that cannot be recognized by any finite automaton (the set of languages ​​is much larger than the one of automata) (الشريحة 88)"
         },
         {
           "n": 89,
-          "t": "Example 2"
+          "t": "Example 2 (الشريحة 89)"
         },
         {
           "n": 90,
-          "t": "NDFA"
+          "t": "NDFA (الشريحة 90)"
         },
         {
           "n": 91,
-          "t": "NDFA"
+          "t": "NDFA (الشريحة 91)"
         },
         {
           "n": 92,
-          "t": "NDFA"
+          "t": "NDFA (الشريحة 92)"
         },
         {
           "n": 93,
-          "t": "NDFA"
+          "t": "NDFA (الشريحة 93)"
         },
         {
           "n": 94,
-          "t": "NDFA = DFA"
+          "t": "NDFA = DFA (الشريحة 94)"
         },
         {
           "n": 95,
-          "t": "NDFA  DFA"
+          "t": "NDFA  DFA (الشريحة 95)"
         },
         {
           "n": 96,
-          "t": "NDFA  DFA"
+          "t": "NDFA  DFA (الشريحة 96)"
         },
         {
           "n": 97,
-          "t": "NDFA  DFA"
+          "t": "NDFA  DFA (الشريحة 97)"
         },
         {
           "n": 98,
-          "t": "NDFA  DFA"
+          "t": "NDFA  DFA (الشريحة 98)"
         },
         {
           "n": 99,
-          "t": "Conclusion"
+          "t": "Conclusion (الشريحة 99)"
         }
       ]
     },
@@ -846,123 +846,123 @@ window.TOC_META = {
         },
         {
           "n": 2,
-          "t": "Syllabus"
+          "t": "مفردات المقرر (Syllabus)"
         },
         {
           "n": 3,
-          "t": "Introduction"
+          "t": "مقدمة (Introduction)"
         },
         {
           "n": 4,
-          "t": "Why is grammar important in computing"
+          "t": "لماذا يعتبر الـ grammar مهماً في نظرية الحوسبة؟ (Why is grammar important in computing theory?)"
         },
         {
           "n": 5,
-          "t": "Definition of Grammar"
+          "t": "تعريف الـ Grammar (Definition of Grammar)"
         },
         {
           "n": 6,
-          "t": "Definition of Grammar"
+          "t": "تعريف الـ Grammar (Definition of Grammar)"
         },
         {
           "n": 7,
-          "t": "Definition of Grammar"
+          "t": "تعريف الـ Grammar (Definition of Grammar)"
         },
         {
           "n": 8,
-          "t": "Production Rules"
+          "t": "قواعد الإنتاج (Production Rules)"
         },
         {
           "n": 9,
-          "t": "Production Rules"
+          "t": "قواعد الإنتاج (Production Rules)"
         },
         {
           "n": 10,
-          "t": "Example"
+          "t": "مثال (Example)"
         },
         {
           "n": 11,
-          "t": "Derivation"
+          "t": "الاشتقاق (Derivation)"
         },
         {
           "n": 12,
-          "t": "Derivation"
+          "t": "الاشتقاق (Derivation)"
         },
         {
           "n": 13,
-          "t": "More Notation"
+          "t": "رموز ومصطلحات إضافية (More Notation)"
         },
         {
           "n": 14,
-          "t": "Derivation of sentence           :"
+          "t": "اشتقاق الجملة: aabb"
         },
         {
           "n": 15,
-          "t": "Language of the grammar"
+          "t": "لغة الـ grammar:"
         },
         {
           "n": 16,
-          "t": "We write:"
+          "t": "نكتب:"
         },
         {
           "n": 17,
-          "t": "In general we write:"
+          "t": "بشكل عام نكتب:"
         },
         {
           "n": 18,
-          "t": "Examples"
+          "t": "أمثلة (Examples)    الـ Grammar:"
         },
         {
           "n": 19,
-          "t": "Another Example"
+          "t": "مثال آخر (Another Example)"
         },
         {
           "n": 20,
-          "t": "aaaabbbbb"
+          "t": "S ⇒ Ab ⇒ aAbb ⇒ aaAbbb ⇒ aaaAbbbb"
         },
         {
           "n": 21,
-          "t": "Example"
+          "t": "مثال"
         },
         {
           "n": 22,
-          "t": "Context-free grammar"
+          "t": "قواعد خالية من السياق (Context-free grammar)"
         },
         {
           "n": 23,
-          "t": "Language of a Grammar"
+          "t": "لغة القواعد (Language of a Grammar)"
         },
         {
           "n": 24,
-          "t": "Language of a Grammar"
+          "t": "لغة القواعد (Language of a Grammar)"
         },
         {
           "n": 25,
-          "t": "Linear grammar"
+          "t": "القواعد الخطية (Linear grammar)"
         },
         {
           "n": 26,
-          "t": "Another Linear Grammar"
+          "t": "مثال آخر على Linear Grammar"
         },
         {
           "n": 27,
-          "t": "Right-Linear Grammars"
+          "t": "قواعد خطية من اليمين (Right-Linear Grammars)"
         },
         {
           "n": 28,
-          "t": "Left-Linear Grammars"
+          "t": "قواعد خطية من اليسار (Left-Linear Grammars)"
         },
         {
           "n": 29,
-          "t": "Regular grammar"
+          "t": "القواعد المنتظمة (Regular grammar)"
         },
         {
           "n": 30,
-          "t": "Regular Grammar"
+          "t": "القواعد المنتظمة (Regular Grammar)"
         },
         {
           "n": 31,
-          "t": "Another formalism for regular languages"
+          "t": "صيغة رياضية أخرى للـ regular languages"
         },
         {
           "n": 32,
@@ -970,179 +970,179 @@ window.TOC_META = {
         },
         {
           "n": 33,
-          "t": "What is the difference between linear grammar and regular grammar?"
+          "t": "ما الفرق بين الـ linear grammar والـ regular grammar؟"
         },
         {
           "n": 34,
-          "t": "Observation"
+          "t": "ملاحظة (Observation)"
         },
         {
           "n": 35,
-          "t": "Observation"
+          "t": "ملاحظة (Observation)"
         },
         {
           "n": 36,
-          "t": "Theorem"
+          "t": "مبرهنة (Theorem)"
         },
         {
           "n": 37,
-          "t": "Example 1"
+          "t": "مثال 1 (Example 1)"
         },
         {
           "n": 38,
-          "t": "Example 2 (1)"
+          "t": "مثال 2 (1) (Example 2 (1))"
         },
         {
           "n": 39,
-          "t": "Example 2 (2)"
+          "t": "مثال 2 (2) (Example 2 (2))"
         },
         {
           "n": 40,
-          "t": "Example 3 (2)"
+          "t": "مثال 3 (2) (Example 3 (2))"
         },
         {
           "n": 41,
-          "t": "Theorem 1(1)"
+          "t": "Theorem 1_(1)"
         },
         {
           "n": 42,
-          "t": "▪Justification:"
+          "t": "Theorem 1_(2)"
         },
         {
           "n": 43,
-          "t": "▪Construction:"
+          "t": "Theorem 1_(3)"
         },
         {
           "n": 44,
-          "t": "Construct an NDFA that accepts the language"
+          "t": "Theorem 1_(4)"
         },
         {
           "n": 45,
-          "t": "Every regular language can be generated by a right-linear grammar."
+          "t": "Theorem 2_(1)"
         },
         {
           "n": 46,
-          "t": "Given a regular language L, let M = (Q, , δ, q0, F) be a DFA that acc"
+          "t": "Theorem 2_(2)"
         },
         {
           "n": 47,
-          "t": "For each transition"
+          "t": "Theorem 2_(3)"
         },
         {
           "n": 48,
-          "t": "Example:  Construct a right-linear grammar for the language L = L(aab*"
+          "t": "Theorem 2_(4)"
         },
         {
           "n": 49,
-          "t": "P = {} initially."
+          "t": "Theorem 2_(5)"
         },
         {
           "n": 50,
-          "t": "Now P ="
+          "t": "Theorem 2_(6)"
         },
         {
           "n": 51,
-          "t": "Three  ways of specifying regular languages"
+          "t": "ثلاث طرق لتحديد اللغات المنتظمة (Three ways of specifying regular languages)"
         },
         {
           "n": 52,
-          "t": "Regular Grammars"
+          "t": "القواعد المنتظمة (Regular Grammars)"
         },
         {
           "n": 53,
-          "t": ""
+          "t": "نظرية (Theorem)"
         },
         {
           "n": 54,
-          "t": ""
+          "t": "البرهان (Proof)"
         },
         {
           "n": 55,
-          "t": ""
+          "t": "حالة القواعد الخطية اليمينية (The case of Right-Linear Grammars)"
         },
         {
           "n": 56,
-          "t": "Grammar       is right-linear"
+          "t": "القاعدة G هي right-linear"
         },
         {
           "n": 57,
-          "t": "Construct NFA         such that"
+          "t": "بناء NFA M بحيث تكون كل حالة متغيراً (variable):"
         },
         {
           "n": 58,
-          "t": "Add edges for each production:"
+          "t": "إضافة حواف لكل قاعدة إنتاج (Add edges for each production):"
         },
         {
           "n": 59,
-          "t": ""
+          "t": "رسم: مخطط NFA يوضح إضافة انتقال يحمل الرمز λ من الحالة S إلى الحالة B لتمثيل التفريعة الثانية في قاعدة الإنتاج:"
         },
         {
           "n": 60,
-          "t": ""
+          "t": "رسم: مخطط NFA يوضح تمثيل قاعدة الإنتاج A → aa B بإضافة حالة وسيطة غير مسماة بين A و B، مع مسار انتقال بقراءة a إلى الحالة الوسيطة ثم a أخرى إلى الحالة B:"
         },
         {
           "n": 61,
-          "t": ""
+          "t": "رسم: إضافة انتقال التكرار الذاتي بالحرف b على الحالة B في مخطط NFA، مع قواعد الإنتاج:"
         },
         {
           "n": 62,
-          "t": ""
+          "t": "رسم: اكتمال بناء مخطط NFA بإضافة انتقال بالحرف a من الحالة B إلى الحالة النهائية VF، مع قواعد الإنتاج:"
         },
         {
           "n": 63,
-          "t": "aaaba"
+          "t": "رسم: تتبع اشتقاق السلسلة aaaba عبر قواعد الـ grammar ومطابقتها لمسار الانتقال في NFA:"
         },
         {
           "n": 64,
-          "t": "Grammar"
+          "t": "NFA M"
         },
         {
           "n": 65,
-          "t": "In General"
+          "t": "بشكل عام (In General)"
         },
         {
           "n": 66,
-          "t": "We construct the NFA         such that:"
+          "t": "نقوم ببناء NFA M بحيث:"
         },
         {
           "n": 67,
-          "t": ""
+          "t": "لكل قاعدة إنتاج: Vi → a1 a2 … am Vj"
         },
         {
           "n": 68,
-          "t": ""
+          "t": "لكل قاعدة إنتاج: Vi → a1 a2 … am"
         },
         {
           "n": 69,
-          "t": ""
+          "t": "إذاً، (So,)"
         },
         {
           "n": 70,
-          "t": ""
+          "t": "الإثبات - الجزء 2 (Proof - Part 2)"
         },
         {
           "n": 71,
-          "t": ""
+          "t": "بما أن L منتظمة (regular)"
         },
         {
           "n": 72,
-          "t": ""
+          "t": "تحويل M إلى right-linear grammar"
         },
         {
           "n": 73,
-          "t": ""
+          "t": "رسم: نفس آلة NFA السابقة مع إضافة قاعدة إنتاج للانتقال الذاتي على الحالة q1 بالرمز b."
         },
         {
           "n": 74,
-          "t": ""
+          "t": "اشتقاق قواعد الإنتاج من آلة NFA (Grammar Productions G from NFA)"
         },
         {
           "n": 75,
-          "t": ""
+          "t": "يمكننا تعميم هذه العملية من أجل"
         },
         {
           "n": 76,
-          "t": ""
+          "t": "بما أن G هي right-linear grammar"
         },
         {
           "n": 77,
@@ -1150,7 +1150,7 @@ window.TOC_META = {
         },
         {
           "n": 78,
-          "t": "Reducibility Automaton"
+          "t": "اختزال الآلات ذات الحالات المنتهية (Reducibility Automaton)"
         }
       ]
     },
@@ -1164,187 +1164,187 @@ window.TOC_META = {
       "slides": [
         {
           "n": 1,
-          "t": "Pushdown Automata\u000bPDAs"
+          "t": "الآلات ذات المكدس (Pushdown Automata - PDAs)"
         },
         {
           "n": 2,
-          "t": "Syllabus"
+          "t": "مفردات المحتوى (Syllabus)"
         },
         {
           "n": 3,
-          "t": "Introduction"
+          "t": "مقدمة عن الآلات ذات المكدس (Introduction)"
         },
         {
           "n": 4,
-          "t": "Introduction"
+          "t": "مقدمة عن الآلات ذات المكدس (Introduction)"
         },
         {
           "n": 5,
-          "t": "What is a stack?"
+          "t": "ما هو المكدس؟ (What is a stack?)"
         },
         {
           "n": 6,
-          "t": "Pushdown Automaton has three component"
+          "t": "مكونات آلة المكدس (Components of a PDA)"
         },
         {
           "n": 7,
-          "t": "Components of a PDA"
+          "t": "مكونات آلة المكدس (Components of a PDA)"
         },
         {
           "n": 8,
-          "t": "8"
+          "t": "التعريف الصوري لآلة المكدس (Formal Definition of a PDA)"
         },
         {
           "n": 9,
-          "t": "Difference Between an FA and a PDA"
+          "t": "الفرق بين الآلة المنتهية FA وآلة المكدس PDA"
         },
         {
           "n": 10,
-          "t": "Types of PDAs"
+          "t": "أنواع آلات المكدس (Types of PDAs)"
         },
         {
           "n": 11,
-          "t": "Why do we need a PDA?"
+          "t": "Why do we need a PDA? (الشريحة 11)"
         },
         {
           "n": 12,
-          "t": "Transition in a PDA"
+          "t": "Transition in a PDA (الشريحة 12)"
         },
         {
           "n": 13,
-          "t": "Transition in a PDA"
+          "t": "Transition in a PDA (الشريحة 13)"
         },
         {
           "n": 14,
-          "t": "IMAGE_SLIDE"
+          "t": "تمثيل دالة انتقال PDA بيانياً (Graphical Representation of PDA Transition)"
         },
         {
           "n": 15,
-          "t": "Graphical notation"
+          "t": "Graphical notation (الشريحة 15)"
         },
         {
           "n": 16,
-          "t": "IMAGE_SLIDE"
+          "t": "حالة الدفع في المكدس (Push Operation on Transition)"
         },
         {
           "n": 17,
-          "t": "IMAGE_SLIDE"
+          "t": "حالة السحب من المكدس (Pop Operation on Transition)"
         },
         {
           "n": 18,
-          "t": "IMAGE_SLIDE"
+          "t": "الانتقال المحايد دون تغيير المكدس (No-Change Stack Transition)"
         },
         {
           "n": 19,
-          "t": "IMAGE_SLIDE"
+          "t": "تصميم PDA للغة الأصفار والآحاد المتساوية L = { aⁿ bⁿ | n ≥ 1 }"
         },
         {
           "n": 20,
-          "t": "IMAGE_SLIDE"
+          "t": "مخطط الحالات الكامل لآلة المكدس القياسية { aⁿ bⁿ }"
         },
         {
           "n": 21,
-          "t": "IMAGE_SLIDE"
+          "t": "حالة البداية وتهيئة المكدس (Initial Stack Setup)"
         },
         {
           "n": 22,
-          "t": "IMAGE_SLIDE"
+          "t": "تتبع خطوة بخطوة: قراءة أول رمز ودفع الرمز في المكدس"
         },
         {
           "n": 23,
-          "t": "IMAGE_SLIDE"
+          "t": "تتبع استمرار دفع رموز a في المكدس"
         },
         {
           "n": 24,
-          "t": "IMAGE_SLIDE"
+          "t": "نقطة التحول: قراءة أول رمز b وبدء عملية السحب"
         },
         {
           "n": 25,
-          "t": "IMAGE_SLIDE"
+          "t": "اكتمال المطابقة والوصول لحالة القبول النهائي q₃"
         },
         {
           "n": 26,
-          "t": "26"
+          "t": "مثال تنفيذي لتتبع آلة المكدس (Execution Example: Time 0) — الحالة الابتدائية وتجهيز المكدس"
         },
         {
           "n": 27,
-          "t": "IMAGE_SLIDE"
+          "t": "تتبع حوسبة PDA — الخطوة الزمنية 1 (Time 1): قراءة أول رمز ودفع الحرف في المكدس"
         },
         {
           "n": 28,
-          "t": "IMAGE_SLIDE"
+          "t": "تتبع حوسبة PDA — الخطوة الزمنية 2 (Time 2): تقدم شريط الإدخال وتراكم الرموز في المكدس"
         },
         {
           "n": 29,
-          "t": "IMAGE_SLIDE"
+          "t": "تتبع حوسبة PDA — الخطوة الزمنية 3 (Time 3): استمرار طور التخزين في قمة المكدس"
         },
         {
           "n": 30,
-          "t": "IMAGE_SLIDE"
+          "t": "تتبع حوسبة PDA — الخطوة الزمنية 4 (Time 4): بلوغ قمة التخزين واستعداد التحول"
         },
         {
           "n": 31,
-          "t": "IMAGE_SLIDE"
+          "t": "تتبع حوسبة PDA — الخطوة الزمنية 5 (Time 5): الانتقال إلى طور المطابقة وقراءة الرمز المعاكس"
         },
         {
           "n": 32,
-          "t": "IMAGE_SLIDE"
+          "t": "تتبع حوسبة PDA — الخطوة الزمنية 6 (Time 6): سحب الرمز المقابل من قمة المكدس (Pop)"
         },
         {
           "n": 33,
-          "t": "IMAGE_SLIDE"
+          "t": "تتبع حوسبة PDA — الخطوة الزمنية 7 (Time 7): استمرار تفريغ ومطابقة عناصر المكدس"
         },
         {
           "n": 34,
-          "t": "IMAGE_SLIDE"
+          "t": "تتبع حوسبة PDA — الخطوة الزمنية 8 (Time 8): تناقص ارتفاع المكدس مع استهلاك الإدخال"
         },
         {
           "n": 35,
-          "t": "IMAGE_SLIDE"
+          "t": "تتبع حوسبة PDA — الخطوة الزمنية 9 (Time 9): الاقتراب من كشف قاع المكدس"
         },
         {
           "n": 36,
-          "t": "IMAGE_SLIDE"
+          "t": "تتبع حوسبة PDA — الخطوة الزمنية 10 (Time 10): مطابقة الرمز الأخير من السلسلة"
         },
         {
           "n": 37,
-          "t": "IMAGE_SLIDE"
+          "t": "تتبع حوسبة PDA — الخطوة الزمنية 11 (Time 11): نفاد شريط الإدخال وظهور رمز القاع $"
         },
         {
           "n": 38,
-          "t": "IMAGE_SLIDE"
+          "t": "تتبع حوسبة PDA — الخطوة الزمنية 12 (Time 12): قراءة رمز القاع $ والانتقال لحالة القبول"
         },
         {
           "n": 39,
-          "t": "IMAGE_SLIDE"
+          "t": "تتبع حوسبة PDA — الخطوة الزمنية 13 (Time 13): التحقق من تفريغ المكدس بالكامل"
         },
         {
           "n": 40,
-          "t": "IMAGE_SLIDE"
+          "t": "تتبع حوسبة PDA — الخطوة الزمنية 14 (Time 14): استقرار الآلة في حالة القبول النهائية F"
         },
         {
           "n": 41,
-          "t": "IMAGE_SLIDE"
+          "t": "تتبع حوسبة PDA — الخطوة الزمنية 15 (Time 15): إعلان قبول السلسلة المدخلة بنجاح"
         },
         {
           "n": 42,
-          "t": "IMAGE_SLIDE"
+          "t": "تحليل الحوسبة غير الحتمية في PDA (NPDA Non-Deterministic Branching)"
         },
         {
           "n": 43,
-          "t": "IMAGE_SLIDE"
+          "t": "معيارا القبول في PDA: الحالة النهائية مقابل المكدس الفارغ"
         },
         {
           "n": 44,
-          "t": "IMAGE_SLIDE"
+          "t": "فئة اللغات الخالية من السياق (Context-Free Languages - CFL)"
         },
         {
           "n": 45,
-          "t": "IMAGE_SLIDE"
+          "t": "حدود قدرات آلة المكدس (Limitations of PDA)"
         },
         {
           "n": 46,
-          "t": "The Relationship Between FA, PDA, and th"
+          "t": "The Relationship Between FA, PDA, and the Turing Machine (الشريحة 46)"
         }
       ]
     },
@@ -1358,227 +1358,227 @@ window.TOC_META = {
       "slides": [
         {
           "n": 1,
-          "t": "Turing Machines"
+          "t": "آلات تورنغ (Turing Machines - TM)"
         },
         {
           "n": 2,
-          "t": "The \"Turing\" machine was invented in 1936 by Alan Turing who called it an \"a-machine\" (automatic machine). The Turing machine is not intended as practical computing technology, but rather as a hypothetical device representing a computing machine. Turing machines help computer scientists understand the limits of mechanical computation. A Turing machine is a hypothetical device that manipulates symbols on a strip of tape according to a table of rules. Despite its simplicity, a Turing machine can be adapted to simulate the logic of any computer algorithm, and is particularly useful in explaining the functions of a CPU inside a computer."
+          "t": "مقدمة تاريخية وتأسيسية عن آلة تورنغ:"
         },
         {
           "n": 3,
-          "t": "What is a Turing machine ?"
+          "t": "ما هي آلة تورنغ؟ (What is a Turing Machine?):"
         },
         {
           "n": 4,
-          "t": "What is a Turing machine ?"
+          "t": "الفكرة الأساسية لعمل آلة تورنغ:"
         },
         {
           "n": 5,
-          "t": "What is a Turing machine ?"
+          "t": "مقارنة القدرات بين الآلات الحوسبية:"
         },
         {
           "n": 6,
-          "t": "6"
+          "t": "تدرج هرم اللغات والنماذج (Language Hierarchy):"
         },
         {
           "n": 7,
-          "t": "Slide 7"
+          "t": "حدود الحوسبة (Limits of Computation):"
         },
         {
           "n": 8,
-          "t": "Components of a Turing machine"
+          "t": "المكونات الأساسية لآلة تورنغ (Components of a Turing Machine):"
         },
         {
           "n": 9,
-          "t": "Components of a Turing machine"
+          "t": "تفصيل الشريط ورمز الفراغ (Tape & Blank Symbol):"
         },
         {
           "n": 10,
-          "t": "Slide 10"
+          "t": "تمثيل شريط آلة تورنغ وحركة الرأس (الشريحة 10):"
         },
         {
           "n": 11,
-          "t": "Slide 11"
+          "t": "تمثيل شريط آلة تورنغ وحركة الرأس (الشريحة 11):"
         },
         {
           "n": 12,
-          "t": "Slide 12"
+          "t": "تمثيل شريط آلة تورنغ وحركة الرأس (الشريحة 12):"
         },
         {
           "n": 13,
-          "t": "Slide 13"
+          "t": "تمثيل شريط آلة تورنغ وحركة الرأس (الشريحة 13):"
         },
         {
           "n": 14,
-          "t": "Slide 14"
+          "t": "تمثيل شريط آلة تورنغ وحركة الرأس (الشريحة 14):"
         },
         {
           "n": 15,
-          "t": "Slide 15"
+          "t": "تمثيل شريط آلة تورنغ وحركة الرأس (الشريحة 15):"
         },
         {
           "n": 16,
-          "t": "Slide 16"
+          "t": "تمثيل شريط آلة تورنغ وحركة الرأس (الشريحة 16):"
         },
         {
           "n": 17,
-          "t": "Slide 17"
+          "t": "تمثيل شريط آلة تورنغ وحركة الرأس (الشريحة 17):"
         },
         {
           "n": 18,
-          "t": "Transition Function:"
+          "t": "دالة الانتقال الرسمية لآلة تورنغ (Transition Function δ):"
         },
         {
           "n": 19,
-          "t": "Slide 19"
+          "t": "أمثلة وصيغ دالة الانتقال في آلة تورنغ (الشريحة 19):"
         },
         {
           "n": 20,
-          "t": "Slide 20"
+          "t": "أمثلة وصيغ دالة الانتقال في آلة تورنغ (الشريحة 20):"
         },
         {
           "n": 21,
-          "t": "Slide 21"
+          "t": "أمثلة وصيغ دالة الانتقال في آلة تورنغ (الشريحة 21):"
         },
         {
           "n": 22,
-          "t": "Slide 22"
+          "t": "أمثلة وصيغ دالة الانتقال في آلة تورنغ (الشريحة 22):"
         },
         {
           "n": 23,
-          "t": "For a read symbol only one transition is allowed"
+          "t": "خاصية الحتمية في آلة تورنغ (Deterministic TM):"
         },
         {
           "n": 24,
-          "t": "Slide 24"
+          "t": "التكوين اللحظي للآلة (Instantaneous Description - ID) (الشريحة 24):"
         },
         {
           "n": 25,
-          "t": "Slide 25"
+          "t": "التكوين اللحظي للآلة (Instantaneous Description - ID) (الشريحة 25):"
         },
         {
           "n": 26,
-          "t": "Slide 26"
+          "t": "التكوين اللحظي للآلة (Instantaneous Description - ID) (الشريحة 26):"
         },
         {
           "n": 27,
-          "t": "Slide 27"
+          "t": "التكوين اللحظي للآلة (Instantaneous Description - ID) (الشريحة 27):"
         },
         {
           "n": 28,
-          "t": "Acceptance"
+          "t": "شروط القبول والرفض في آلة تورنغ (Acceptance & Rejection):"
         },
         {
           "n": 29,
-          "t": "Turing Machine Example"
+          "t": "مثال تطبيقي 1: تتبع مسار القبول الناجح (Acceptance Trace) - الشريحة 29:"
         },
         {
           "n": 30,
-          "t": "Time 0"
+          "t": "مثال تطبيقي 1: تتبع مسار القبول الناجح (Acceptance Trace) - الشريحة 30:"
         },
         {
           "n": 31,
-          "t": "Time 0"
+          "t": "مثال تطبيقي 1: تتبع مسار القبول الناجح (Acceptance Trace) - الشريحة 31:"
         },
         {
           "n": 32,
-          "t": "Time 1"
+          "t": "مثال تطبيقي 1: تتبع مسار القبول الناجح (Acceptance Trace) - الشريحة 32:"
         },
         {
           "n": 33,
-          "t": "Time 2"
+          "t": "مثال تطبيقي 1: تتبع مسار القبول الناجح (Acceptance Trace) - الشريحة 33:"
         },
         {
           "n": 34,
-          "t": "Time 3"
+          "t": "مثال تطبيقي 1: تتبع مسار القبول الناجح (Acceptance Trace) - الشريحة 34:"
         },
         {
           "n": 35,
-          "t": "Rejection Example"
+          "t": "مثال تطبيقي 2: تتبع مسار الرفض الفوري (Rejection Trace) - الشريحة 35:"
         },
         {
           "n": 36,
-          "t": "Time 0"
+          "t": "مثال تطبيقي 2: تتبع مسار الرفض الفوري (Rejection Trace) - الشريحة 36:"
         },
         {
           "n": 37,
-          "t": "Infinite Loop Example"
+          "t": "مثال تطبيقي 3: فخ الحلقة اللانهائية (Infinite Loop) - الشريحة 37:"
         },
         {
           "n": 38,
-          "t": "Time 0"
+          "t": "مثال تطبيقي 3: فخ الحلقة اللانهائية (Infinite Loop) - الشريحة 38:"
         },
         {
           "n": 39,
-          "t": "Time 0"
+          "t": "مثال تطبيقي 3: فخ الحلقة اللانهائية (Infinite Loop) - الشريحة 39:"
         },
         {
           "n": 40,
-          "t": "Time 1"
+          "t": "مثال تطبيقي 3: فخ الحلقة اللانهائية (Infinite Loop) - الشريحة 40:"
         },
         {
           "n": 41,
-          "t": "Time 2"
+          "t": "مثال تطبيقي 3: فخ الحلقة اللانهائية (Infinite Loop) - الشريحة 41:"
         },
         {
           "n": 42,
-          "t": "Because of the infinite loop the final state cannot be reached and the input is not accepted."
+          "t": "مثال تطبيقي 3: فخ الحلقة اللانهائية (Infinite Loop) - الشريحة 42:"
         },
         {
           "n": 43,
-          "t": "Another Turing Machine Example"
+          "t": "مثال شامل 4: تتبع حوسبي كامل من الزمن 0 حتى 13 (الشريحة 43):"
         },
         {
           "n": 44,
-          "t": "Time 0"
+          "t": "مثال شامل 4: تتبع حوسبي كامل من الزمن 0 حتى 13 (الشريحة 44):"
         },
         {
           "n": 45,
-          "t": "Time 1"
+          "t": "مثال شامل 4: تتبع حوسبي كامل من الزمن 0 حتى 13 (الشريحة 45):"
         },
         {
           "n": 46,
-          "t": "Time 2"
+          "t": "مثال شامل 4: تتبع حوسبي كامل من الزمن 0 حتى 13 (الشريحة 46):"
         },
         {
           "n": 47,
-          "t": "Time 3"
+          "t": "مثال شامل 4: تتبع حوسبي كامل من الزمن 0 حتى 13 (الشريحة 47):"
         },
         {
           "n": 48,
-          "t": "Time 4"
+          "t": "مثال شامل 4: تتبع حوسبي كامل من الزمن 0 حتى 13 (الشريحة 48):"
         },
         {
           "n": 49,
-          "t": "Time 5"
+          "t": "مثال شامل 4: تتبع حوسبي كامل من الزمن 0 حتى 13 (الشريحة 49):"
         },
         {
           "n": 50,
-          "t": "Time 6"
+          "t": "مثال شامل 4: تتبع حوسبي كامل من الزمن 0 حتى 13 (الشريحة 50):"
         },
         {
           "n": 51,
-          "t": "Time 7"
+          "t": "مثال شامل 4: تتبع حوسبي كامل من الزمن 0 حتى 13 (الشريحة 51):"
         },
         {
           "n": 52,
-          "t": "Time 8"
+          "t": "مثال شامل 4: تتبع حوسبي كامل من الزمن 0 حتى 13 (الشريحة 52):"
         },
         {
           "n": 53,
-          "t": "Time 9"
+          "t": "مثال شامل 4: تتبع حوسبي كامل من الزمن 0 حتى 13 (الشريحة 53):"
         },
         {
           "n": 54,
-          "t": "Time 10"
+          "t": "مثال شامل 4: تتبع حوسبي كامل من الزمن 0 حتى 13 (الشريحة 54):"
         },
         {
           "n": 55,
-          "t": "Time 11"
+          "t": "مثال شامل 4: تتبع حوسبي كامل من الزمن 0 حتى 13 (الشريحة 55):"
         },
         {
           "n": 56,
-          "t": "Time 12"
+          "t": "مثال شامل 4: تتبع حوسبي كامل من الزمن 0 حتى 13 (الشريحة 56):"
         }
       ]
     },
@@ -1592,231 +1592,231 @@ window.TOC_META = {
       "slides": [
         {
           "n": 1,
-          "t": "PDA Trace & Examples — Page 1"
+          "t": "مثال أوتوماتون المكدس (Pushdown Automaton - PDA):"
         },
         {
           "n": 2,
-          "t": "PDA Trace & Examples — Page 2"
+          "t": "مثال أوتوماتون المكدس (Pushdown Automaton - PDA):"
         },
         {
           "n": 3,
-          "t": "PDA Trace & Examples — Page 3"
+          "t": "تتبع مسار القبول خطوة بخطوة — مثال إدخال ناجح (Time 0):"
         },
         {
           "n": 4,
-          "t": "PDA Trace & Examples — Page 4"
+          "t": "تتبع مسار القبول خطوة بخطوة — مثال إدخال ناجح (Time 1):"
         },
         {
           "n": 5,
-          "t": "PDA Trace & Examples — Page 5"
+          "t": "تتبع مسار القبول خطوة بخطوة — مثال إدخال ناجح (Time 2):"
         },
         {
           "n": 6,
-          "t": "PDA Trace & Examples — Page 6"
+          "t": "تتبع مسار القبول خطوة بخطوة — مثال إدخال ناجح (Time 3):"
         },
         {
           "n": 7,
-          "t": "PDA Trace & Examples — Page 7"
+          "t": "تتبع مسار القبول خطوة بخطوة — مثال إدخال ناجح (Time 4):"
         },
         {
           "n": 8,
-          "t": "PDA Trace & Examples — Page 8"
+          "t": "تتبع مسار القبول خطوة بخطوة — مثال إدخال ناجح (Time 5):"
         },
         {
           "n": 9,
-          "t": "PDA Trace & Examples — Page 9"
+          "t": "تتبع مسار القبول خطوة بخطوة — مثال إدخال ناجح (Time 6):"
         },
         {
           "n": 10,
-          "t": "PDA Trace & Examples — Page 10"
+          "t": "تتبع مسار الرفض — سلسلة غير متطابقة (Time 0):"
         },
         {
           "n": 11,
-          "t": "PDA Trace & Examples — Page 11"
+          "t": "تتبع مسار الرفض — سلسلة غير متطابقة (Time 1):"
         },
         {
           "n": 12,
-          "t": "PDA Trace & Examples — Page 12"
+          "t": "تتبع مسار الرفض — سلسلة غير متطابقة (Time 2):"
         },
         {
           "n": 13,
-          "t": "PDA Trace & Examples — Page 13"
+          "t": "تتبع مسار الرفض — سلسلة غير متطابقة (Time 3):"
         },
         {
           "n": 14,
-          "t": "PDA Trace & Examples — Page 14"
+          "t": "تتبع مسار الرفض — سلسلة غير متطابقة (Time 4):"
         },
         {
           "n": 15,
-          "t": "PDA Trace & Examples — Page 15"
+          "t": "تتبع مسار الرفض — سلسلة غير متطابقة (Time 5):"
         },
         {
           "n": 16,
-          "t": "PDA Trace & Examples — Page 16"
+          "t": "تتبع مسار الرفض — سلسلة غير متطابقة (Time 6):"
         },
         {
           "n": 17,
-          "t": "PDA Trace & Examples — Page 17"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 17):"
         },
         {
           "n": 18,
-          "t": "PDA Trace & Examples — Page 18"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 18):"
         },
         {
           "n": 19,
-          "t": "PDA Trace & Examples — Page 19"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 19):"
         },
         {
           "n": 20,
-          "t": "PDA Trace & Examples — Page 20"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 20):"
         },
         {
           "n": 21,
-          "t": "PDA Trace & Examples — Page 21"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 21):"
         },
         {
           "n": 22,
-          "t": "PDA Trace & Examples — Page 22"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 22):"
         },
         {
           "n": 23,
-          "t": "PDA Trace & Examples — Page 23"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 23):"
         },
         {
           "n": 24,
-          "t": "PDA Trace & Examples — Page 24"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 24):"
         },
         {
           "n": 25,
-          "t": "PDA Trace & Examples — Page 25"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 25):"
         },
         {
           "n": 26,
-          "t": "PDA Trace & Examples — Page 26"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 26):"
         },
         {
           "n": 27,
-          "t": "PDA Trace & Examples — Page 27"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 27):"
         },
         {
           "n": 28,
-          "t": "PDA Trace & Examples — Page 28"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 28):"
         },
         {
           "n": 29,
-          "t": "PDA Trace & Examples — Page 29"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 29):"
         },
         {
           "n": 30,
-          "t": "PDA Trace & Examples — Page 30"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 30):"
         },
         {
           "n": 31,
-          "t": "PDA Trace & Examples — Page 31"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 31):"
         },
         {
           "n": 32,
-          "t": "PDA Trace & Examples — Page 32"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 32):"
         },
         {
           "n": 33,
-          "t": "PDA Trace & Examples — Page 33"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 33):"
         },
         {
           "n": 34,
-          "t": "PDA Trace & Examples — Page 34"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 34):"
         },
         {
           "n": 35,
-          "t": "PDA Trace & Examples — Page 35"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 35):"
         },
         {
           "n": 36,
-          "t": "PDA Trace & Examples — Page 36"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 36):"
         },
         {
           "n": 37,
-          "t": "PDA Trace & Examples — Page 37"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 37):"
         },
         {
           "n": 38,
-          "t": "PDA Trace & Examples — Page 38"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 38):"
         },
         {
           "n": 39,
-          "t": "PDA Trace & Examples — Page 39"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 39):"
         },
         {
           "n": 40,
-          "t": "PDA Trace & Examples — Page 40"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 40):"
         },
         {
           "n": 41,
-          "t": "PDA Trace & Examples — Page 41"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 41):"
         },
         {
           "n": 42,
-          "t": "PDA Trace & Examples — Page 42"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 42):"
         },
         {
           "n": 43,
-          "t": "PDA Trace & Examples — Page 43"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 43):"
         },
         {
           "n": 44,
-          "t": "PDA Trace & Examples — Page 44"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 44):"
         },
         {
           "n": 45,
-          "t": "PDA Trace & Examples — Page 45"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 45):"
         },
         {
           "n": 46,
-          "t": "PDA Trace & Examples — Page 46"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 46):"
         },
         {
           "n": 47,
-          "t": "PDA Trace & Examples — Page 47"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 47):"
         },
         {
           "n": 48,
-          "t": "PDA Trace & Examples — Page 48"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 48):"
         },
         {
           "n": 49,
-          "t": "PDA Trace & Examples — Page 49"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 49):"
         },
         {
           "n": 50,
-          "t": "PDA Trace & Examples — Page 50"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 50):"
         },
         {
           "n": 51,
-          "t": "PDA Trace & Examples — Page 51"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 51):"
         },
         {
           "n": 52,
-          "t": "PDA Trace & Examples — Page 52"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 52):"
         },
         {
           "n": 53,
-          "t": "PDA Trace & Examples — Page 53"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 53):"
         },
         {
           "n": 54,
-          "t": "PDA Trace & Examples — Page 54"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 54):"
         },
         {
           "n": 55,
-          "t": "PDA Trace & Examples — Page 55"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 55):"
         },
         {
           "n": 56,
-          "t": "PDA Trace & Examples — Page 56"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 56):"
         },
         {
           "n": 57,
-          "t": "PDA Trace & Examples — Page 57"
+          "t": "مسائل وتمارين متقدمة في أوتوماتون المكدس PDA (الشريحة 57):"
         }
       ]
     }
