@@ -3,7 +3,7 @@ import json
 import os
 
 official_mapping = {
-    'L1-S006': {
+    'L1-S011': {
         'isOfficial': True,
         'badge': '🏷️ سؤال امتحان فصلي رسمي — Q1.7',
         'q_en': 'Computability Theory is the branch that studies problems that cannot be solved by any algorithm.',
@@ -16,7 +16,7 @@ official_mapping = {
         'correction': 'Computability Theory studies which problems CAN and CANNOT be solved by algorithms.',
         'quote': '💡 اقتباس الاختبار: نظرية قابلية الحساب لا تختص بالمستحيل فقط، بل تصنف المشكلات إلى: قابلة للحل (Decidable) وغير قابلة للحل (Undecidable).'
     },
-    'L1-S008': {
+    'L1-S010': {
         'isOfficial': True,
         'badge': '🏷️ سؤال امتحان فصلي رسمي — Q1.8',
         'q_en': 'Grammar is a set of rules for accepted language.',
@@ -29,7 +29,7 @@ official_mapping = {
         'correction': 'Grammar generates a language, while an Automaton accepts a language.',
         'quote': '💡 قاعدة ذهبية للاختبار: Grammar -> Generates (توليد) | Automaton -> Accepts (قبول وفحص).'
     },
-    'L1-S009': {
+    'L1-S010': {
         'isOfficial': True,
         'badge': '🏷️ سؤال امتحان فصلي رسمي — Q1.3',
         'q_en': 'A Finite Automaton is a mathematical model that consists of a finite number of states and moves between states when reading input symbols.',
@@ -42,7 +42,7 @@ official_mapping = {
         'correction': '',
         'quote': '💡 اقتباس السلايد للاختبار: الآلة المنتهية تمتلك عدداً منتهياً من الحالات (Finite States) وتنتقل بدقة مع كل رمز مدخل.'
     },
-    'L1-S013': {
+    'L1-S014': {
         'isOfficial': True,
         'badge': '🏷️ سؤال امتحان فصلي رسمي — Q1.1',
         'q_en': 'An alphabet is a finite set of fundamental symbols.',
@@ -55,7 +55,7 @@ official_mapping = {
         'correction': '',
         'quote': '💡 ما تحفظه للاختبار: الأبجدية Σ منتهية حتماً (Finite)، بينما اللغة L الناتجة منها قد تكون لانهائية (Infinite).'
     },
-    'L1-S017': {
+    'L1-S018': {
         'isOfficial': True,
         'badge': '🏷️ سؤال امتحان فصلي رسمي — Q1.4',
         'q_en': 'If u = "abb" and v = "ab", then uv = "abba".',
@@ -68,7 +68,7 @@ official_mapping = {
         'correction': 'uv = abb · ab = abbab (وليس abba)',
         'quote': '💡 قاعدة الاختبار: دمج السلاسل ليس تبادلياً (uv ≠ vu)، وطول الناتج يساوي مجموع الطولين (|uv| = |u| + |v|).'
     },
-    'L1-S021': {
+    'L1-S022': {
         'isOfficial': True,
         'badge': '🏷️ سؤال امتحان فصلي رسمي — Q1.5',
         'q_en': 'A formal language is a set of strings over an alphabet.',
